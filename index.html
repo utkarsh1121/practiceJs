@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="result">Result</h1>
+    <script>
+        let a = 10;
+        let b = 20;
+        console.log(a + b);
+        const name = new String("Utkarsh");
+        document.getElementById("result").innerText = `Result : ${a + b}`;
+        console.log(name.charAt(0));
+        console.log(name.toUpperCase());
+        console.log(name.indexOf("tka"));
+        console.log(name.substring(4));//
+
+        let email = "user@gmail.com";
+        let domain = email.slice(4);
+        let domain2 = email.substring(4);
+
+
+        console.log(domain);
+        console.log(domain2);
+
+        console.log(domain.length);
+
+        let text = "Hello World";
+
+        console.log(text.slice(7, 2));      // ""
+        console.log(text.slice(2, 7));      // ""
+        console.log(text.substring(7, 1));  // llo W
+        console.log(text.substring(1, 7));  // llo W
+
+        const str = `    hello alpha    ${a + b}   `;
+        console.log(`not trim : ${str}`);
+        console.log(str.trim());// there are trimStart() and trimEnd() also
+
+        console.log("Loops\nfor\nwhile\nforEach");
+
+        let sum = 0;
+        for (let i = 1; i < 601; i++) {
+            sum = sum + i;
+        }
+        console.log(sum);
+
+
+        let naam = "Utkarsh";
+        
+
+    </script>
+</body>
+
+</html>
