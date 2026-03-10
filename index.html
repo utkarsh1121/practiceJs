@@ -50,59 +50,89 @@
         // console.log(sum);
 
 
-        let naam = "Utkarsh";
+        // let naam = "Utkarsh";
 
-        function score(...scores) {
-            // console.log(scores);
-            let total = 0;
-            scores.forEach(
-                function (scores) {
-                    total = total + scores;
-                }
-            )
-            return total;
-        }
+        // function score(...scores) {
+        //     console.log(scores);
+        //     let total = 0;
+        //     scores.forEach(
+        //         function (scores) {
+        //             total = total + scores;
+        //         }
+        //     )
+        //     return total;
+        // }
 
-        console.log(score(10, 20, 30, 60));
+        // console.log(score(10, 20, 30, 60));
 
 
-        function abcd(val) {
-            val();
-        }
-        abcd(function () {
-            console.log("hey");
-        });
+        // function abcd(val) {
+        //     val();
+        // }
+        // abcd(function () {
+        //     console.log("hey");
+        // });
 
-// fat arrow function
-        const square = num => num * num;
+        // fat arrow function
+        // const square = num => num * num;
 
-        console.log(square(5));
+        // console.log(square(5));
 
-// expression function
-        const sq=function(sq){
-            return sq*sq;
-        }
+        // expression function
+        // const sq = function (sq) {
+        //     return sq * sq;
+        // } 
 
-        console.log(sq(5));
+        // console.log(sq(5));
 
         // declaration function
-function abc(s){
-return s*s;
-}
-
-console.log(abc(5));
+        // function abc(s) {
+        //     return s * s;
+        // }
+        // console.log(abc(5));
 
         // function abc(){
-
         // }
-
         // let def=function(){
+        // }
+        // let ghi=()=>{
+        // };
 
+        // let a = function(m){
+        //     return m+m
+        // }
+        // console.log(a(5));
+
+        // function outer() {
+        //     let count = 0;
+
+        //     return function () {
+        //         count++;
+        //         console.log(count);
+        //     };
         // }
 
-        // let ghi=()=>{
+        // const counter = outer();
 
-        // };
+        // counter();
+        // counter();
+        // counter();
+
+        function discountCalculator(discount) {
+            return function (price) {
+                return price - price * (discount / 100);
+            };
+        }
+
+        let discounter = discountCalculator(30);
+
+        console.log(discounter(86543).toFixed(4));
+
+        // slice and splice in array
+
+        // we use map when we have to make new array on the basis of old array
+
+        // reduce, filter, find , map , slice , splice , reverse , every , some , sort , forEach , push , pop , shift , unshift , spread
 
     </script>
 </body>
