@@ -10,48 +10,99 @@
 <body>
     <h1 id="result">Result</h1>
     <script>
-        let a = 10;
-        let b = 20;
-        console.log(a + b);
-        const name = new String("Utkarsh");
-        document.getElementById("result").innerText = `Result : ${a + b}`;
-        console.log(name.charAt(0));
-        console.log(name.toUpperCase());
-        console.log(name.indexOf("tka"));
-        console.log(name.substring(4));//
+        // let a = 10;
+        // let b = 20;
+        // console.log(a + b);
+        // const name = new String("Utkarsh");
+        // document.getElementById("result").innerText = `Result : ${a + b}`;
+        // console.log(name.charAt(0));
+        // console.log(name.toUpperCase());
+        // console.log(name.indexOf("tka"));
+        // console.log(name.substring(4));//
 
-        let email = "user@gmail.com";
-        let domain = email.slice(4);
-        let domain2 = email.substring(4);
+        // let email = "user@gmail.com";
+        // let domain = email.slice(4);
+        // let domain2 = email.substring(4);
 
 
-        console.log(domain);
-        console.log(domain2);
+        // console.log(domain);
+        // console.log(domain2);
 
-        console.log(domain.length);
+        // console.log(domain.length);
 
-        let text = "Hello World";
+        // let text = "Hello World";
 
-        console.log(text.slice(7, 2));      // ""
-        console.log(text.slice(2, 7));      // ""
-        console.log(text.substring(7, 1));  // llo W
-        console.log(text.substring(1, 7));  // llo W
+        // console.log(text.slice(7, 2));      // ""
+        // console.log(text.slice(2, 7));      // ""
+        // console.log(text.substring(7, 1));  // llo W
+        // console.log(text.substring(1, 7));  // llo W
 
-        const str = `    hello alpha    ${a + b}   `;
-        console.log(`not trim : ${str}`);
-        console.log(str.trim());// there are trimStart() and trimEnd() also
+        // const str = `    hello alpha    ${a + b}   `;
+        // console.log(`not trim : ${str}`);
+        // console.log(str.trim());// there are trimStart() and trimEnd() also
 
-        console.log("Loops\nfor\nwhile\nforEach");
+        // console.log("Loops\nfor\nwhile\nforEach");
 
-        let sum = 0;
-        for (let i = 1; i < 601; i++) {
-            sum = sum + i;
-        }
-        console.log(sum);
+        // let sum = 0;
+        // for (let i = 1; i < 101; i++) {
+        //     sum = sum + i;
+        // }
+        // console.log(sum);
 
 
         let naam = "Utkarsh";
-        
+
+        function score(...scores) {
+            // console.log(scores);
+            let total = 0;
+            scores.forEach(
+                function (scores) {
+                    total = total + scores;
+                }
+            )
+            return total;
+        }
+
+        console.log(score(10, 20, 30, 60));
+
+
+        function abcd(val) {
+            val();
+        }
+        abcd(function () {
+            console.log("hey");
+        });
+
+// fat arrow function
+        const square = num => num * num;
+
+        console.log(square(5));
+
+// expression function
+        const sq=function(sq){
+            return sq*sq;
+        }
+
+        console.log(sq(5));
+
+        // declaration function
+function abc(s){
+return s*s;
+}
+
+console.log(abc(5));
+
+        // function abc(){
+
+        // }
+
+        // let def=function(){
+
+        // }
+
+        // let ghi=()=>{
+
+        // };
 
     </script>
 </body>
