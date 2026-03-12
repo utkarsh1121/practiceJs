@@ -1,19 +1,3 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js practice</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <h1 id="result">Practice Questions</h1>
-    <script src="script.js">
-        
-    </script>
-    
-    <!-- <script>
         // let a = 10;
         // let b = 20;
         // console.log(a + b);
@@ -514,7 +498,3 @@
 
 
 
-    </script> -->
-</body>
-
-</html>
