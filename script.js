@@ -696,12 +696,26 @@ for (i = 0; i < numbers.length; i++) {
     document.write(sq(numbers[i]) + "<br>")
 }
 
+document.write("<h3>Create an object user with properties name and age. Print both values using dot and bracket notation. :</h3>");
 
 
+let obj = { name: "Utkarsh", age: 22 };
 
 
+document.write(obj.name+"<br>")
+document.write(obj.age)
+
+document.write( JSON.stringify(obj) )
 
 
+function getKeys(obj){
+
+}
+
+let input = { a: 1, b: 2, c: 3 };
+
+
+console.log(Object``.keys(input))
 
 
 
