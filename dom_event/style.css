@@ -32,7 +32,7 @@ body{
 
 .file-upload-btn{
     display: inline-block;
-    background: rgba(72, 179, 129, 0.521);
+    background: rgba(72, 179, 129, 0.67);
     color: white;
     border: 1px solid white;
     border-radius: 5rem;
@@ -43,4 +43,8 @@ body{
     text-align: center;
     padding: 10px;
     cursor: pointer;
+}
+
+.file-upload-btn:hover{
+    background: rgb(4, 81, 50);
 }

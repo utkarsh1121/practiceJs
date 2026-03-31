@@ -102,8 +102,19 @@ fileName.addEventListener("click",(e)=>{
     console.log(e)
 })
 
-fileName.addEventListener("change",(e)=>{
-    console.log(e.target.files[0].name)
-    fileInput.textContent = e.target.files[0].name;
-})
+fileName.addEventListener("change", (e) => {
+    if (e.target.files && e.target.files.length > 0) {
+        const selectedFile = e.target.files[0].name;
+        console.log("File Selected:", selectedFile);
+        fileInput.textContent = selectedFile;
+    } else {
+        // This handles cases where the input is cleared
+        fileInput.textContent = "File not selected";
+    }
+});
 
+// 2. Fires specifically when the user hits 'Cancel' or closes the window
+fileName.addEventListener("cancel", () => {
+    console.log("No file selected (user cancelled)");
+    fileInput.textContent = "File not selected";
+});
