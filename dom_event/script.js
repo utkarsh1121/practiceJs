@@ -1,6 +1,6 @@
 let heading = document.createElement('h1');
 
-heading.textContent = "my name is utkarsh";
+heading.textContent = "AppendChild";
 
 let btag = document.querySelector('body');
 
@@ -113,8 +113,45 @@ fileName.addEventListener("change", (e) => {
     }
 });
 
-// 2. Fires specifically when the user hits 'Cancel' or closes the window
 fileName.addEventListener("cancel", () => {
     console.log("No file selected (user cancelled)");
     fileInput.textContent = "File not selected";
+});
+
+
+let form =document.querySelector('form');
+let inp = document.querySelectorAll('.input');
+let card = document.querySelectorAll('.card h4');
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // prompt("Form submitted");
+    console.log(inp)
+    // console.log(inp[0].value);
+    // console.log(inp[1].value);
+    // console.log(inp[2].value);
+    // console.log(card[0].textContent);
+    // console.log(card[1].textContent);
+    // console.log(card[2].textContent);
+    card[0].textContent = "Name : " + inp[0].value;
+    card[1].textContent = "Email : " + inp[1].value;
+    card[2].textContent = "Phone No. : " + inp[2].value;
+})
+
+let mouseBox = document.querySelector('.mouse-position');
+let mousePosition = document.querySelector('.mouse-position h4');
+
+mouseBox.addEventListener('mousemove', (e) => {
+    // console.log(e);
+    mousePosition.style.top = e.offsetY + "px";
+    mousePosition.style.left = e.offsetX + "px";
+}); 
+
+let characterInput = document.querySelector('#character-input');
+let characterCount = document.querySelector('#character-count span');
+
+characterInput.addEventListener('input', (e) => {
+    // console.log(e.target.value.length);
+    characterCount.textContent = e.target.value.length;
 });

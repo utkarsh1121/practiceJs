@@ -1,9 +1,15 @@
-body{
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
     background: rgb(0, 0, 0);
-    color : white;
+    color: white;
 }
 
-#input{
+#input {
     background-color: rgb(68, 54, 54);
     color: white;
     border: 1px solid white;
@@ -18,7 +24,7 @@ body{
 
 }
 
-.keyword{
+.keyword {
     font-size: 100px;
     /* font-family: Helvetica; */
     font-weight: bold;
@@ -26,11 +32,16 @@ body{
     text-align: center;
 }
 
-#input2{
+#input2 {
     display: none;
 }
 
-.file-upload-btn{
+#main {
+    position: relative;
+}
+
+.file-upload-btn {
+    /* position: absolute; */
     display: inline-block;
     background: rgba(72, 179, 129, 0.67);
     color: white;
@@ -45,6 +56,102 @@ body{
     cursor: pointer;
 }
 
-.file-upload-btn:hover{
+.file-upload-btn:hover {
     background: rgb(4, 81, 50);
+}
+
+.input_form input {
+    display: block;
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(68, 54, 54);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+form {
+    display: inline-block;
+}
+
+.card {
+    border: 1px solid white;
+    min-width: 200px;
+    /* min-height: 100px;   */
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.card h4 {
+    margin: 10px 8px;
+    overflow-wrap: break-word;
+}
+
+.mouse-position {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+    width: 26.5rem;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.mouse-position h4 {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    position: absolute;
+    margin: 0;
+    transition: all .1s;
+}
+
+.character-counter {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+    width: 25.9rem;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    padding-left : 10px;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+#character-input{
+    background-color: rgba(68, 54, 54, 0.262);
+    border: 1px solid white;
+    border-radius: 2px;
+    color: yellow;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 400px;
+    /* padding: 5px;
+    margin: 10px;
+    ;
+    height: 30px; */
+}
+
+#character-count span{
+    color: yellow;
 }
