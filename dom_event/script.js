@@ -66,7 +66,7 @@ paragraph.addEventListener('dblclick', handleDoubleClick);
 let input = document.getElementById('input');
 
 input.addEventListener('input', (chai) => {
-    if(chai.data !== null){
+    if (chai.data !== null) {
 
         console.log(chai.data);
     }
@@ -85,10 +85,11 @@ let keyb = document.querySelector('.keyword');
 
 window.addEventListener('keydown', (e) => {
     // console.log(e.key);
-    if (e.key === " "){
+    if (e.key === " ") {
         keyb.textContent = "SPC KEY";
-    }else{
-    keyb.textContent = e.key;}
+    } else {
+        keyb.textContent = e.key;
+    }
 })
 
 let fileInput = document.querySelector('.file-upload-btn');
@@ -98,7 +99,7 @@ let fileName = document.getElementById('input2');
 //     fileName.click();
 // })
 
-fileName.addEventListener("click",(e)=>{
+fileName.addEventListener("click", (e) => {
     console.log(e)
 })
 
@@ -119,7 +120,7 @@ fileName.addEventListener("cancel", () => {
 });
 
 
-let form =document.querySelector('form');
+let form = document.querySelector('form');
 let inp = document.querySelectorAll('.input');
 let card = document.querySelectorAll('.card h4');
 
@@ -146,7 +147,7 @@ mouseBox.addEventListener('mousemove', (e) => {
     // console.log(e);
     mousePosition.style.top = e.offsetY + "px";
     mousePosition.style.left = e.offsetX + "px";
-}); 
+});
 
 let characterInput = document.querySelector('#character-input');
 let characterCount = document.querySelector('#character-count span');
