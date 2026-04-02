@@ -1,6 +1,6 @@
 let heading = document.createElement('h1');
 
-heading.textContent = "AppendChild";
+heading.textContent = "The End !!!!";
 
 let btag = document.querySelector('body');
 
@@ -155,4 +155,93 @@ let characterCount = document.querySelector('#character-count span');
 characterInput.addEventListener('input', (e) => {
     // console.log(e.target.value.length);
     characterCount.textContent = e.target.value.length;
+});
+
+
+// form validation
+
+let submitBtn = document.querySelector('.form-validation form');
+let nm = document.querySelector('#name');
+let em = document.querySelector('#email');
+let phone = document.querySelector('#phone');
+let ps = document.querySelector('#password');
+let selectGender = document.querySelector('#select-gender');
+
+submitBtn.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+    const nameRegex = /^[a-zA-Z\s]{3,50}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10}$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+    if (!nameRegex.test(nm.value)) {
+        nm.style.border = "1px solid red";
+        document.getElementById('name-error').style.display = "block";
+    } else {
+        nm.style.border = "2px solid green";
+        document.getElementById('name-error').style.display = "none";
+    }
+    if (!emailRegex.test(em.value)) {
+        em.style.border = "1px solid red";
+        document.getElementById('email-error').style.display = "block";
+    } else {
+        em.style.border = "2px solid green";
+        document.getElementById('email-error').style.display = "none";
+    }
+    if (!phoneRegex.test(phone.value)) {
+        phone.style.border = "1px solid red";
+        document.getElementById('phone-error').style.display = "block";
+    } else {
+        phone.style.border = "2px solid green";
+        document.getElementById('phone-error').style.display = "none";
+    }
+    if (!passwordRegex.test(ps.value)) {
+        ps.style.border = "1px solid red";
+        document.getElementById('password-error').style.display = "block";
+    } else {
+        ps.style.border = "2px solid green";
+        document.getElementById('password-error').style.display = "none";
+    }
+})
+
+
+const startBtn = document.getElementById('start-btn');
+const progress = document.querySelector('.progress');
+const status = document.querySelector('.status');
+let downloadFile = document.querySelector('.download-card h2');
+
+startBtn.addEventListener('click', () => {
+    let width = 0;
+    //   status.textContent = "0%";
+    //   progress.style.width = "0%";
+    startBtn.disabled = true;
+
+    const interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval);
+            status.textContent = "Download Complete ✅";
+            startBtn.disabled = false;
+            downloadFile.textContent = "Download File...";
+
+        } else {
+            width++;
+            downloadFile.textContent = "Started Downloading...";
+            progress.style.width = width + "%";
+            status.textContent = width + "%";
+            //   startBtn.disabled = false;
+        }
+    }, 30);
+});
+
+function showAlert() {
+    alert("Alert");
+}
+
+const btnConfirm = document.querySelectorAll('.btn');
+
+btnConfirm.forEach((e) => {
+    e.addEventListener('click', () => {
+        showAlert();
+    });
 });

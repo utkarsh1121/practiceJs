@@ -70,19 +70,65 @@
 
     </div>
     <div class="mouse-position">
-        <h4>Move Mouse Here</h4>
+        <h4>Don't leave me</h4>
     </div>
 
 
     <div class="character-counter">
         <!-- <div class="character-counter-content"> -->
         <h3>Character Counter</h3>
-        <input type="text" id="character-input">
+        <textarea placeholder="Enter your text here" id="character-input" rows="2"></textarea>
         <p id="character-count">Total Characters: <span></span></p>
-
-
         <!-- </div> -->
     </div>
+
+
+    <h2>!!! Form Validation !!!</h2>
+    <div class="form-validation">
+
+        <form action="">
+
+            <input type="text" id="name" placeholder="Enter your name">
+            <p id="name-error">Name must be 3–50 letters and spaces only</p>
+            <input type="email" id="email" placeholder="Enter your email" autocomplete="email">
+            <p id="email-error">Please enter a valid email address</p>
+            <input type="tel" id="phone" placeholder="Enter your phone no." autocomplete="tel">
+            <p id="phone-error">Phone no. must be 10 digits</p>
+            <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+            <p id="password-error">Password must be 8+ chars, include upper, lower, number & special char</p>
+            <select name="gender" id="select-gender">
+                <option disabled selected>Choose Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="submit" id="submit-btn">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="download-card">
+            <h2>Download File...</h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p class="status">0%</p>
+            <button id="start-btn">Start Download</button>
+        </div>
+
+        <button class="btn">
+            Alert
+        </button>
+        <button class="btn">
+            Alert
+        </button>
+        <button class="btn">
+            Alert
+        </button>
+
+    </div>
+
+
+
 </body>
 
 </html>
