@@ -127,7 +127,36 @@
 
     </div>
 
+    <h2>Local Storage and Session Storage</h2>
+    <!-- <button class="local-storage-btn" id="local-storage">Local Storage</button>
+    <button class="session-storage-btn" id="session-storage">Session Storage</button> -->
 
+    <div class="theme-container">
+        <h2>Light Mode / Dark Mode</h2>
+        <label class="switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+
+<div class="country_container">
+    <h2>Country List</h2>
+    <!-- <select id="country_input" name="country">
+        <option disabled selected value="">Choose Your Country</option>
+    </select> -->
+
+    <!-- <label for="country_input" class="country-label">Search country</label> -->
+    <input
+        type="text"
+        id="country_input"
+        list="country_datalist"
+        placeholder="Type to search (e.g. India)…"
+        autocomplete="on"
+    >
+    <datalist id="country_datalist"></datalist>
+
+</div>
 
 </body>
 
