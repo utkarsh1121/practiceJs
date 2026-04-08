@@ -133,40 +133,77 @@
     <div class="theme-container">
         <h2>Light Mode / Dark Mode</h2>
         <label class="switch">
-          <input type="checkbox" id="themeToggle">
-          <span class="slider"></span>
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
         </label>
-      </div>
+    </div>
 
 
-<div class="country_container">
-    <h2>Country List</h2>
-    <!-- <select id="country_input" name="country">
+    <div class="country_container">
+        <h2>Country List</h2>
+        <!-- <select id="country_input" name="country">
         <option disabled selected value="">Choose Your Country</option>
     </select> -->
 
-    <!-- <label for="country_input" class="country-label">Search country</label> -->
-    <input
-        type="text"
-        id="country_input"
-        list="country_datalist"
-        placeholder="Type to search (e.g. India)…"
-        autocomplete="on"
-    >
-    <datalist id="country_datalist"></datalist>
+        <!-- <label for="country_input" class="country-label">Search country</label> -->
+        <input type="text" id="country_input" list="country_datalist" placeholder="Type to search (e.g. India)…"
+            autocomplete="on">
+        <datalist id="country_datalist"></datalist>
 
-</div>
+    </div>
 
 
 
     <script src="script.js" defer></script>
+    <div class="main-container">
+        <button class="tosterButton darkToster">Dark Toster</button>
+        <button class="tosterButton lightToster">Light Toster</button>
+    </div>
     <!-- <div class="container">
         <p>Example of a  toster message.</p>
     </div> -->
 
-<button class="tosterButton darkToster">Dark Toster</button>
-<button class="tosterButton lightToster">Light Toster</button>
+    <!-- <div class="form-container">
+        <form id="profileForm">
+            <h2>Create Profile</h2>
+            <p>Fill in the details below to update your public bio.</p>
 
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera">
+            </div>
+
+            <div class="input-group">
+                <label for="role">Professional Role</label>
+                <input type="text" id="role" name="role" placeholder="e.g. Product Designer">
+            </div>
+
+            <div class="input-group">
+                <label for="image-url">Profile Image URL</label>
+                <input type="url" id="image-url" name="image-url" placeholder="https://example.com/photo.jpg">
+            </div>
+
+            <div class="input-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Save Profile</button>
+
+        </form>
+    </div> -->
+
+
+    <div class="product-inventory">
+        <h1>Product Inventory</h1>
+        <div class="buttons">
+            <button id="showInStock">In-Stock Products</button>
+            <button id="showOutOfStock">Out of Stock Products</button>
+        </div>
+        <ul id="productList">
+            <li>Product 1</li>
+        </ul>
+    </div>
 
 </body>
 
