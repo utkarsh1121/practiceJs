@@ -70,6 +70,7 @@ body {
 
 form {
     display: inline-block;
+    width: 100%;
 }
 
 .card {
@@ -340,7 +341,7 @@ form {
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .switch input {
@@ -551,7 +552,7 @@ input:checked+.slider:before {
     font-weight: 600;
     cursor: pointer;
     transition: filter 0.3s ease, transform 0.1s ease;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .submit-btn:hover {
@@ -591,12 +592,13 @@ input:checked+.slider:before {
     margin-bottom: 20px;
 }
 
-.product-inventory button {
+.product-inventory button:not(.delete-btn):not(.edit-btn) {
     flex: 1;
     padding: 10px 15px;
     border: 1px solid rgba(251, 255, 0, 0.6);
     border-radius: 6px;
     background: linear-gradient(90deg, rgb(148, 183, 33), rgba(242, 255, 0, 0.8));
+    /* background: transparent; */
     color: #111;
     cursor: pointer;
     font-size: 14px;
@@ -604,13 +606,42 @@ input:checked+.slider:before {
     transition: filter 0.2s ease, transform 0.1s ease;
 }
 
-.product-inventory button:hover {
+.delete-btn {
+    background: rgba(255, 0, 0, 0.714);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.edit-btn{
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: rgb(255, 0, 0);
+}
+
+.delete-btn:active {
+    transform: scale(0.98);
+}
+
+.product-inventory button:not(.delete-btn):hover {
     filter: brightness(1.08);
 }
 
-.product-inventory button:active {
+.product-inventory button:not(.delete-btn):active {
     transform: scale(0.98);
 }
+
+
 
 .product-inventory ul {
     list-style-type: none;
@@ -622,8 +653,149 @@ input:checked+.slider:before {
 .product-inventory li {
     padding: 8px 12px;
     background-color: rgba(255, 255, 255, 0.09);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    border: 2px solid;
+    border-image: linear-gradient(122deg, rgb(123, 122, 117) 10%, rgb(255 210 0 / 38%) 90%) 1;
     margin-bottom: 8px;
     border-radius: 4px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.product-inventory li .delete-btn {
+    margin-left: auto;
+}
+
+
+
+.add-product-btn{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+
+
+
+/* Container with your signature yellow glow */
+#product-modal{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* color: red; */
+    backdrop-filter: blur(10px);
+}
+
+#product-form{
+    width: 100%;
+}
+
+#edit-product-modal{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* color: red; */
+    backdrop-filter: blur(10px);
+}
+.modal-container {
+    background: rgba(25, 24, 24, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    border: 1px solid rgba(242, 255, 1, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(242, 255, 1, 0.1);
+    color: white;
+}
+
+.modal-container h2 {
+    color: #f2ff01;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Flex layout for input spacing */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #f2ff01;
+}
+
+/* Flex layout for the Toggle Switch row */
+.toggle-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Button Layout */
+.modal-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cancel {
+    flex: 1;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+#status{
+    text-align: center;
+    color: green;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+

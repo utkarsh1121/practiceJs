@@ -663,10 +663,12 @@ fetch("http://localhost:3000/users/jWHSz1bigxY", {
 //   })
 //   .catch(err => console.error(err));
 
-fetch("http://localhost:3000/products", {
-    method: "DELETE"
-}).then(() => console.log("deleted"))
-    .catch(err => console.error(err))
+// DELETE ALL PRODUCTS
+
+// fetch("http://localhost:3000/products", {
+//     method: "DELETE"
+// }).then(() => console.log("deleted"))
+//     .catch(err => console.error(err))
 
 // fetch("http://localhost:3000/products?inStock=true")
 //     .then(res => res.json())
@@ -682,63 +684,291 @@ fetch("http://localhost:3000/products", {
 let button = document.getElementById("showInStock");
 let list = document.getElementById("productList");
 let allButton = document.getElementById("showOutOfStock");
+let deleteButton = document.querySelector(".delete-btn");
+let addProductBtn = document.querySelector(".add-product-btn");
+let pName = document.getElementById("p-name");
+let pPrice = document.getElementById("p-price");
+let pStock = document.getElementById("p-stock");
+let form = document.getElementById("product-form");
+let status = document.getElementById("status");
+let submitBtn = document.querySelector(".submit-btn");
+let editBtn = document.querySelector(".edit-btn");
+let editForm = document.getElementById("edit-product-form");
+let statusEdit = document.getElementById("statusEdit");
+let editPrice = document.querySelector(".edit_price");
+let editStockToggle = document.querySelector(".edit_stock");
+let editName = document.querySelector(".edit_name");
+let currentEditId = null;
 
-button.addEventListener("click", () => {
-    fetch("http://localhost:3000/products?inStock=true")
+//     fetch("http://localhost:3000/products?inStock=true")
+//         .then(res => res.json())
+//         .then(data => {
+//             // console.log("In Stock Products:"); // header
+//             // data.forEach(product => console.log(product.name)); // log each product name
+//             list.innerHTML = "";
+//             count = 0;
+//             data.forEach(product => {
+//                 allButton.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+//                 count++;
+//                 const listItem = document.createElement("li");
+//                 listItem.textContent = `${count}. ${product.name} - ₹${product.price}`;
+//                 list.appendChild(listItem);
+//                 button.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+//             });
+//         })
+//         .catch(err => console.error(err));
+// })
+
+// allButton.addEventListener("click", () => {
+//     fetch("http://localhost:3000/products?inStock=false")
+//         .then(res => res.json())
+//         .then(data => {
+//             // console.log("Out of Stock Products:"); // header
+//             // data.forEach(product => console.log(product.name)); // log each product name
+//             list.innerHTML = "";
+//             count = 0;
+//             data.forEach(product => {
+//                 count++;
+//                 button.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+//                 const listItem = document.createElement("li");
+//                 listItem.textContent = `${count}. ${product.name} - ₹${product.price}`;
+//                 list.appendChild(listItem);
+//                 allButton.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+//             });
+//         })
+//         .catch(err => console.error(err));
+// })
+
+
+
+// let StockProdct = () => {
+//     fetch("http://localhost:3000/products?inStock=true")
+//         .then(res => res.json())
+//         .then(data => {
+//             // console.log("In Stock Products:"); // header
+//             // data.forEach(product => console.log(product.name)); // log each product name
+//             list.innerHTML = "";
+//             count = 0;
+//             data.forEach(product => {
+//                 allButton.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+//                 count++;
+//                 const listItem = document.createElement("li");
+//                 listItem.textContent = `${count}. ${product.name} - ₹${product.price}`;
+//                 list.appendChild(listItem);
+//                 button.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+//             });
+//         })
+//         .catch(err => console.error(err));
+// }
+
+// let OutOfStockProdct = () => {
+//     fetch("http://localhost:3000/products?inStock=false")
+//         .then(res => res.json())
+//         .then(data => {
+//             // console.log("Out of Stock Products:"); // header
+//             // data.forEach(product => console.log(product.name)); // log each product name
+//             list.innerHTML = "";
+//             count = 0;
+//             data.forEach(product => {
+//                 count++;
+//                 button.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+//                 const listItem = document.createElement("li");
+//                 listItem.textContent = `${count}. ${product.name} - ₹${product.price}`;
+//                 list.appendChild(listItem);
+//                 allButton.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+//             });
+//         })
+//         .catch(err => console.error(err));
+// }
+
+
+
+const fetchProducts = (inStock) => {
+    currentState = inStock;
+    fetch(`http://localhost:3000/products?inStock=${inStock}`)
         .then(res => res.json())
         .then(data => {
-            console.log("In Stock Products:"); // header
-            const list = data.forEach(product => console.log(product.name)); // log each product name
-            document.write(list);
+            list.innerHTML = "";
+            let count = 0;
+
+            data.forEach(product => {
+                count++;
+                const li = document.createElement("li");
+                li.textContent = `${count}. ${product.name} - ₹${product.price}`;
+                list.appendChild(li);
+                const deleteBtn = document.createElement("button");
+                deleteBtn.textContent = "Delete";
+                deleteBtn.classList.add("delete-btn");
+                deleteBtn.addEventListener("click", () => {
+                    deleteProduct(product.id);
+                });
+                li.appendChild(deleteBtn);
+                const editBtn = document.createElement("button");
+                editBtn.textContent = "Edit";
+                editBtn.classList.add("edit-btn");
+                editBtn.addEventListener("click", () => {
+                    document.getElementById('edit-product-modal').style.display = 'flex';
+                    statusEdit.textContent = "";
+                    editName.value = product.name;
+                    editPrice.value = product.price;
+                    editStockToggle.checked = product.inStock;
+                    currentEditId = product.id;
+                    // editProduct(product.id);
+                });
+                li.appendChild(editBtn);
+            });
+
+            // Button styling logic
+            if (inStock) {
+                button.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+                allButton.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+            } else {
+                allButton.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+                button.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+            }
         })
         .catch(err => console.error(err));
+};
 
-
-
-
-    // Create main container
-    const container = document.createElement("div");
-    container.className = "product-inventory";
-
-    // Create and append heading
-    const heading = document.createElement("h1");
-    heading.textContent = "Product Inventory";
-    container.appendChild(heading);
-
-    // Create buttons container
-    const buttonsDiv = document.createElement("div");
-    buttonsDiv.className = "buttons";
-
-    // Create In-Stock button
-    const inStockBtn = document.createElement("button");
-    inStockBtn.id = "showInStock";
-    inStockBtn.textContent = "In-Stock Products";
-    buttonsDiv.appendChild(inStockBtn);
-
-    // Create Out-of-Stock button
-    const outStockBtn = document.createElement("button");
-    outStockBtn.id = "showAll";
-    outStockBtn.textContent = "Out of Stock Products";
-    buttonsDiv.appendChild(outStockBtn);
-
-    // Append buttons container to main container
-    container.appendChild(buttonsDiv);
-
-    // Create product list
-    const productList = document.createElement("ul");
-    productList.id = "productList";
-    container.appendChild(productList);
-
-    // Append the main container to the body
-    document.body.appendChild(container);
-})
-
-allButton.addEventListener("click", () => {
-    fetch("http://localhost:3000/products?inStock=false")
-        .then(res => res.json())
-        .then(data => {
-            console.log("Out of Stock Products:"); // header
-            data.forEach(product => console.log(product.name)); // log each product name
+function deleteProduct(id) {
+    fetch(`http://localhost:3000/products/${id}`, {
+        method: "DELETE"
+    })
+        .then(() => {
+            console.log("deleted")
+            fetchProducts(currentState);
         })
         .catch(err => console.error(err));
+}
+
+
+
+addProductBtn.addEventListener("click", () => {
+    document.getElementById('product-modal').style.display = 'flex';
+    pName.value = '';
+    pPrice.value = '';
+    pStock.checked = true;
+    status.textContent = "";
+    // fetchProducts(currentState);
+});
+
+
+
+// function editProduct(id) {
+//     fetch(`http://localhost:3000/products/${id}`, {
+//         method: "PUT",
+//         headers: { 'content-type': 'application/json' },
+//         body: JSON.stringify({
+//             "name": editName.value,
+//             "price": editPrice.value,
+//             // "inStock": pStock.checked
+//         })
+//     })
+//         .then(() => {
+//             console.log("edited")
+//             fetchProducts(currentState);
+//         })
+//         .catch(err => console.error(err));
+// }
+
+// function editProduct(id) {
+editForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+        const response = await fetch(`http://localhost:3000/products/${currentEditId}`, {
+            method: "PUT",
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+                "name": editName.value,
+                "price": editPrice.value,
+                "inStock": editStockToggle.checked,
+                // "inStock": editForm.pStock.checked
+            })
+        });
+        console.log(response);
+        console.log(response.ok);
+        if (!response.ok) throw new Error("Failed to edit product");
+        const data = await response.json();
+        console.log("Success:", data);
+        status.style.color = "green";
+        status.textContent = "Product edited successfully";
+        // submitBtn.disabled = true;
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        closeEditModal();
+        fetchProducts(currentState);
+    }
+    catch (err) {
+        console.error(err);
+        status.style.color = "red";
+        status.textContent = "Failed to edit product";
+    }
 })
+
+
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     fetch("http://localhost:3000/products", {
+//         method: "POST",
+//         headers: { 'content-type': 'application/json' },
+//         body: JSON.stringify({
+//             "name": pName.value,
+//             "price": pPrice.value,
+//             "inStock": pStock.checked
+//         })
+//     })
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data);
+//             // status.textContent = "";
+//             // setTimeout(() => {
+//             //     status.textContent = "Product added successfully";
+//             // }, 3000);
+//     })
+//     .then(() => {console.log("Product added successfully")})
+//     .catch(err => console.error(err));
+
+//     closeModal();
+// });
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+        const response = await fetch("http://localhost:3000/products", {
+            method: "POST",
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+                "name": pName.value,
+                "price": pPrice.value,
+                "inStock": pStock.checked
+            })
+        });
+        console.log(response);
+        console.log(response.ok);
+        if (!response.ok) throw new Error("Failed to add product");
+        const data = await response.json();
+        console.log("Success:", data);
+        status.style.color = "green";
+        status.textContent = "Product added successfully";
+        submitBtn.disabled = true;
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        closeModal();
+    }
+    // .catch(err => console.error(err));
+    catch (err) {
+        console.error(err);
+        status.style.color = "red";
+        status.textContent = "Failed to add product";
+    }
+
+});
+
+
+
+function closeModal() {
+    document.getElementById('product-modal').style.display = 'none';
+}
+
+function closeEditModal() {
+    document.getElementById('edit-product-modal').style.display = 'none';
+    editingProductId = null;
+}
