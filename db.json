@@ -1,0 +1,1054 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Amit Sharma",
+      "email": "amit@example.com",
+      "city": "Gurgaon"
+    },
+    {
+      "id": "2",
+      "name": "Neha Verma",
+      "email": "neha@example.com",
+      "city": "Delhi"
+    },
+    {
+      "id": "3",
+      "name": "Rahul Singh",
+      "email": "rahul@example.com",
+      "city": "Noida"
+    },
+    {
+      "id": "yfS1-gxDpB4"
+    },
+    {
+      "id": "u0g25XgPpKs"
+    },
+    {
+      "id": "Zum7AlCqp7s"
+    },
+    {
+      "id": "fVHdqoHfL7s"
+    },
+    {
+      "name": "new name",
+      "email": "newemail@example.com",
+      "city": "Gurgaon",
+      "id": "nYtKfdkz1-Y"
+    },
+    {
+      "name": "new name",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "Bg2fNS_zhWE"
+    },
+    {
+      "name": "new name",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "nwwPt64CKn4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "bangalore",
+      "id": "jWHSz1bigxY"
+    },
+    {
+      "name": "new name",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "T8MNycuVaeA"
+    },
+    {
+      "name": "new name",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "JdeCpJpGBK0"
+    },
+    {
+      "name": "M",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "ny1mVY9LmyQ"
+    },
+    {
+      "name": "Manak",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "3h_1Yvr1Dk8"
+    },
+    {
+      "name": "Manak ",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "VjUurUuCPXY"
+    },
+    {
+      "name": "Manak t",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "VNqtRpOwkJA"
+    },
+    {
+      "name": "Manak tr",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "kLhVNsayIMY"
+    },
+    {
+      "name": "Manak tri",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "alcmxulh23w"
+    },
+    {
+      "name": "Manak trip",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "3AxmYidK94w"
+    },
+    {
+      "name": "Manak tripathi",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "NboAwNRhXZc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "newemail@example.com",
+      "city": "new city",
+      "id": "0gNiNz4WdJM"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "qvmynn1o5z8"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "ZUw9q44BKJE"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "SE6kGY1myCI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "p6CnLMwgN24"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "rwwEgbtSVIk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "ArMUAZHRe_I"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "uNn-kiPjoA4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "w937KBKnMNc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "bNVbJjEVt_A"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "bebe3LkPDa8"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "OoVbldKi-Kw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "66lKx8nR1AE"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "IsbQUAPkaww"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "fEDHgB5hU4U"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "ERRTM57HN-c"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "eJDZ-ZDK7m0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "GheH6-mLUPg"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "cHfF2sZxQy0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "jhq-zSZ5JX4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "CdQ8eHCE02A"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "-KbXFvUZZ_0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "SaIgfE7PN8M"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "fMb1fQGzFcI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "u3yK2gz_qZU"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "4vPd9msUXAE"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "o9UV7fz20ec"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "AQJ-yXRzPPQ"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "BmVxSHbmCsw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "JPQiP7-fG5Y"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "5HXWuBWODQ8"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "8o21spWOH7Q"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "GKdmaKxkO6s"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "TDTHxJz9nhM"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "H_S_meI27Rg"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "XZlIPgWxvaU"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "Wk4ndGF2h48"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "pbd8oRg8KpI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "-VBd3ajVtP4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "13HAT2FpQTo"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "r-fb53al1_w"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "_MD-ZUWPHiQ"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "KfBcUROZuas"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "z7ikNaWEUx0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "dD3Hbs1vLn0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "f_zzZG_KQoI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "rl1uyu9Vmfc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "7GZW6-lYlC0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "oql8OrZB-Xk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "FprkPK3jdOY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "B45vyHA-oAQ"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "H49SnQBFlSI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "x4d2e1Vryyc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "XTUFKMtISVo"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "0qDomamOmdk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "QAaxukTWex4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "qv_TEKr1pAI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "inD7IiZMKcY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "1rFYiyR70vE"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "LIiyVoZG1UU"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "vMdgg9OzYUE"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "TO1Th17lRXQ"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "gD7tzc8Fgfc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "VcuJUm3ON1Q"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "L-KIWJXiB4c"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "zLbbf9Rmhuo"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "D8PbdHzghVw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "QqSOyutp3mY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "Y3Oz1svhv_4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "yNTHXWOcK9Q"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "mEg9eAJEXx8"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "hE7__pMitVU"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "1kzFCO2PTVs"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "mxIMi287V3E"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "ibpqeRN1ke0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "XYfbZckwjqM"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "UPegwU0gVNk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "yveOB7Z6uU0"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "yirFxZDGe7k"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "agjU83Jl8JY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "QevrDFm5xdA"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "jLUUl4MYp_U"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "AlJkdEB4lik"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "7i2Ki_p9A2Q"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "DMuIbpN83SA"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "6VM-r2vmtVo"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "OjbFI4FmeSg"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "Hfa3HfJ8VE4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "woiFRakj7iI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "CG3FxYSVr34"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "0CKHOZkmkxg"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "ar3wN-Fg2NI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "dB0kZuMQ5mg"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "l5UN0NOWZw8"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "_94rtBXHnmY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "TLu6jZOuxR8"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "d1Z-9wLHIEc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "O7T9F8HPgqI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "4LFwbweCx1E"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "xklB7S4A_3o"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "mqfJ2M_suyM"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "yGGUYKlQGiM"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "yBeuJhn85v4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "EYWzKZVgcOw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "TOp3gTqLDGw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "BsP4PUemAFk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "evDcpcmTRAk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "AfPuLTOtbvw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "oxwKiyS4VoM"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "cv9BcMC6JmU"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "HKOe3TNhqyU"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "N2aNeY1tiLw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "CxuqtcKvJ74"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "GAGt0qeN1Lg"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "aM7OYV9KV08"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "mlPrf8aEqJA"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "MyBi_E9Irjo"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "bNeLxPGAIx4"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "6-NOwwcjuXc"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "gSF8blscGJw"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "EpCVyB5LNlY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "3vcQWb8vFtI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "_1OUNGNAFzY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "4yJuSx3vxvI"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "XxeERG_DnrY"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "pzuDyvcxz2o"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "3635ctE0aLo"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "1b6q1YdrCQk"
+    },
+    {
+      "name": "Manak Tripathi",
+      "email": "manakripathi@example.com",
+      "city": "new city",
+      "id": "UO8xrMf0e4Y"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Learning JSON Server",
+      "body": "This is a practice post.",
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "title": "REST APIs are fun",
+      "body": "Building APIs locally.",
+      "userId": 2
+    },
+    {
+      "id": "3",
+      "title": "Frontend Practice",
+      "body": "Connecting API with UI.",
+      "userId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "name": "Sanya",
+      "text": "Great post!"
+    },
+    {
+      "id": "2",
+      "postId": 1,
+      "name": "Arjun",
+      "text": "Very helpful!"
+    },
+    {
+      "id": "3",
+      "postId": 2,
+      "name": "Priya",
+      "text": "Nice explanation!"
+    }
+  ],
+  "products": [
+    {
+      "id": "r8XOlFfSt7w",
+      "name": "Wireless Mouse",
+      "price": 899,
+      "inStock": true
+    },
+    {
+      "id": "4ypTlGSKfIA",
+      "name": "Wireless Mouse",
+      "price": 899,
+      "inStock": true
+    },
+    {
+      "id": "cA4YgAh2qXQ",
+      "name": "Gaming Keyboard",
+      "price": 2499,
+      "inStock": false
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "VLkIJ_oFDiw"
+    },
+    {
+      "id": "2PBnSzJQ8vQ",
+      "name": "Bluetooth Speaker",
+      "price": 1799,
+      "inStock": false
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "xR-Fj3fBur4"
+    },
+    {
+      "name": "editeed",
+      "price": "555",
+      "id": "4wBa1cU6o-k"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "WAc9J0_g-XE"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "P4wvGJV2L50"
+    },
+    {
+      "id": "ahyktLFQL8A",
+      "name": "External Hard Drive",
+      "price": 5499,
+      "inStock": false
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "CDxJVxRpZMs"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "5oUPTIepmjA"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "RYepP8NONgc"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "4aqI95YmPDk"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "j4H5BpYCaJM"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "QHnu6mEmkUY"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "3e71XUy0PRM"
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": "Pts6TyuIffw"
+    },
+    {
+      "name": "laptop",
+      "price": "81122",
+      "inStock": true,
+      "id": "_xwQRgReXMk"
+    },
+    {
+      "name": "laptopppp",
+      "price": "81122",
+      "inStock": true,
+      "id": "eZv_nQE6w3I"
+    },
+    {
+      "name": "Claire. uhijhi",
+      "price": "8666",
+      "inStock": true,
+      "id": "84AUTIPQ51A"
+    },
+    {
+      "name": "  ihji. Claire",
+      "price": "8666999",
+      "inStock": true,
+      "id": "iaWr2T08SfI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
