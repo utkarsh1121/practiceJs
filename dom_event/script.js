@@ -972,3 +972,118 @@ function closeEditModal() {
     document.getElementById('edit-product-modal').style.display = 'none';
     editingProductId = null;
 }
+
+
+
+let searchWeather = document.querySelector("#cityInput");
+let getWeather = document.querySelector("#getWeather");
+let weather = document.querySelector("#weather");
+let temperature = document.querySelector("#temperature");
+// let location = document.querySelector("#location");
+let feelsLike = document.querySelector("#feelsLike");
+let humidity = document.querySelector("#humidity");
+let pressure = document.querySelector("#pressure");
+let windSpeed = document.querySelector("#windSpeed");
+let clouds = document.querySelector("#clouds");
+let visibility = document.querySelector("#visibility");
+let sunrise = document.querySelector("#sunrise");
+let sunset = document.querySelector("#sunset");
+let country = document.querySelector("#country");
+let cityName = document.querySelector("#cityName");
+let errorMessageWeather = document.querySelector("#errorMessageWeather");
+
+const apiKey = "6fb03a4baee4752b90604c78045beb9f";
+
+
+getWeather.addEventListener("click", () => {
+    if (searchWeather.value === "") {
+        alert("Please enter a city name");
+    } else {
+        getWeatherData();
+    }
+})
+
+async function getWeatherData() {
+
+    // getWeather.addEventListener("click", () => {
+    //     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchWeather.value}&limit=5&appid=${apiKey}`)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         console.log(data);
+    //     })
+    // })
+    try {
+        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchWeather.value}&limit=&appid=${apiKey}`);
+        const data = await response.json();
+        console.log(data);
+        if (data.length === 0) {
+            throw new Error("City not found");
+            // errorMessageWeather.textContent = "City not found";
+        } else {
+            const lat = data[0].lat;
+            const lon = data[0].lon;
+
+            console.log(lat, lon);
+
+            fetchFinalWeatherData(lat, lon);
+        }
+    }
+    catch (err) {
+        console.log(err);
+        errorMessageWeather.textContent = err.message;
+    }
+}
+
+async function fetchFinalWeatherData(lat, lon) {
+    try {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`);
+        const data = await response.json();
+        console.log(data);
+        const tempKelvin = data.main.temp;
+        const tempCelsius = tempKelvin - 273.15;
+        temperature.textContent = Math.floor(tempCelsius);
+        const feelsLikeKelvin = data.main.feels_like;
+        const feelsLikeCelsius = feelsLikeKelvin - 273.15;
+        feelsLike.textContent = Math.floor(feelsLikeCelsius);
+        // feelsLike.textContent = data.main.feels_like;
+        humidity.textContent = data.main.humidity;
+        pressure.textContent = data.main.pressure;
+        windSpeed.textContent = data.wind.speed;
+        clouds.textContent = data.clouds.all;
+        const visibilityValue = data.visibility; // in meters
+
+        let visibilityText = "";
+
+        if (visibilityValue <= 1000) {
+            visibilityText = "Fog / very poor visibility 🌫️";
+        } else if (visibilityValue <= 4000) {
+            visibilityText = "Hazy conditions 🌁";
+        } else if (visibilityValue <= 8000) {
+            visibilityText = "Moderate visibility";
+        } else if (visibilityValue < 10000) {
+            visibilityText = "Good visibility";
+        } else {
+            visibilityText = "Excellent / clear sky ☀️";
+        }
+
+        visibility.textContent = visibilityText; 
+        sunrise.textContent = formatIST(data.sys.sunrise);
+        sunset.textContent = formatIST(data.sys.sunset);
+        country.textContent = data.sys.country;
+        cityName.textContent = data.name;
+    }
+    catch (err) {
+        console.log(err);
+    }
+}
+
+
+function formatIST(unix) {
+    return new Date(unix * 1000).toLocaleTimeString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        // second: "2-digit",
+        hour12: true
+    });
+}
