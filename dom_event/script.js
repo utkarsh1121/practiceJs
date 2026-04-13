@@ -1136,7 +1136,7 @@ const showNextImage = async function (isNext) {
                     clearInterval(currentInterval);
                     indexCount = 0;
                 }
-            }, 2);
+            }, 20);
             
             
         }
