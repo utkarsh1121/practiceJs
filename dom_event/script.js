@@ -1066,7 +1066,7 @@ async function fetchFinalWeatherData(lat, lon) {
             visibilityText = "Excellent / clear sky ☀️";
         }
 
-        visibility.textContent = visibilityText; 
+        visibility.textContent = visibilityText;
         sunrise.textContent = formatIST(data.sys.sunrise);
         sunset.textContent = formatIST(data.sys.sunset);
         country.textContent = data.sys.country;
@@ -1085,5 +1085,65 @@ function formatIST(unix) {
         minute: "2-digit",
         // second: "2-digit",
         hour12: true
+    });
+}
+
+
+
+let previousButton = document.querySelector(".Imageslider-button");
+let nextButton = document.querySelector(".Imageslider-button");
+let imagesArray = document.querySelectorAll(".slider-item");
+let currentIndex = 0; // 0 is the first image
+
+// previousButton.addEventListener("click", () => {
+//     console.log("previous button clicked");
+// })
+
+// nextButton.addEventListener("click", () => {
+//     console.log("next button clicked");
+// })
+
+const showNextImage = async function (isNext) {
+
+    console.log("currentIndex", currentIndex);
+    if (isNext) {
+        currentIndex++;
+        // console.log(currentIndex);
+        if (currentIndex >= imagesArray.length) {
+            currentIndex = 0;
+            console.log("next image");
+        }
+    } else {
+        currentIndex--;
+        console.log("previous image");
+        if (currentIndex < 0) {
+            currentIndex = imagesArray.length - 1;
+        }
+    }
+
+    imagesArray.forEach((element, index) => {
+        // console.log(element);
+        // console.log(index);
+        if (index === currentIndex) {
+            indexCount = 0;
+            element.style.width = "0%";
+            element.style.display = "block";
+            currentInterval = setInterval(() => {
+                indexCount++;
+                element.style.width = indexCount + "%";
+
+                if (indexCount >= 100) {
+                    clearInterval(currentInterval);
+                    indexCount = 0;
+                }
+            }, 2);
+            
+            
+        }
+        else {
+            // 3. Turn the others OFF
+            element.style.display = "none";
+            element.style.width = "0%";
+        }
     });
 }
