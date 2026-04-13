@@ -1,129 +1,135 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <p>hello </p>
-    <p>need to append this </p>
+  <body>
+    <p>hello</p>
+    <p>need to append this</p>
     <h1 id="title">title of the page</h1>
     <p id="text">Old Text</p>
 
     <div id="box"></div>
 
     <ul>
-        <li>apple 1</li>
-        <li>apple 2</li>
-        <li>apple 3</li>
-        <li>apple 4</li>
-        <li>apple 5 </li>
+      <li>apple 1</li>
+      <li>apple 2</li>
+      <li>apple 3</li>
+      <li>apple 4</li>
+      <li>apple 5</li>
     </ul>
     <!-- <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fHww"
         alt="this image"> -->
 
-    <input type="text" id="input">
+    <input type="text" id="input" />
 
     <h3 class="select-device">Select your device</h3>
     <select>
+      <option disabled selected>Choose Your Device</option>
 
-        <option disabled selected>Choose Your Device</option>
+      <option value="samsung">Samsung</option>
 
-        <option value="samsung">Samsung</option>
+      <option value="mi">Xiomi</option>
 
-        <option value="mi">Xiomi</option>
+      <option value="apple">Apple iPhone</option>
 
-        <option value="apple">Apple iPhone</option>
-
-        <option value="oppo">0ppo</option>
+      <option value="oppo">0ppo</option>
     </select>
 
     <h1 class="keyword">Start Typing</h1>
 
-
     <div id="main">
-        <label for="input2" class="file-upload-btn">Choose File</label>
-        <input type="file" id="input2" accept="*/*">
-        <!-- <div id="file-name">Uploaded File</div> -->
+      <label for="input2" class="file-upload-btn">Choose File</label>
+      <input type="file" id="input2" accept="*/*" />
+      <!-- <div id="file-name">Uploaded File</div> -->
     </div>
 
     <div class="input_form">
-        <h3>Fill this form to get a free gift</h3>
+      <h3>Fill this form to get a free gift</h3>
 
-        <form action="">
-            <input class="input" required placeholder="name" type="text">
-            <input class="input" placeholder="email" type="email">
-            <input class="input" placeholder="phone no." type="tel">
-            <input type="submit">
-        </form>
+      <form action="">
+        <input class="input" required placeholder="name" type="text" />
+        <input class="input" placeholder="email" type="email" />
+        <input class="input" placeholder="phone no." type="tel" />
+        <input type="submit" />
+      </form>
 
-        <div class="card">
-            <h2>Your Card</h2>
-            <h4>Name : </h4>
-            <h4>Email : </h4>
-            <h4>Phone No. : </h4>
-        </div>
-
+      <div class="card">
+        <h2>Your Card</h2>
+        <h4>Name :</h4>
+        <h4>Email :</h4>
+        <h4>Phone No. :</h4>
+      </div>
     </div>
     <div class="mouse-position">
-        <h4>Don't leave me</h4>
+      <h4>Don't leave me</h4>
     </div>
-
 
     <div class="character-counter">
-        <!-- <div class="character-counter-content"> -->
-        <h3>Character Counter</h3>
-        <textarea placeholder="Enter your text here" id="character-input" rows="2"></textarea>
-        <p id="character-count">Total Characters: <span></span></p>
-        <!-- </div> -->
+      <!-- <div class="character-counter-content"> -->
+      <h3>Character Counter</h3>
+      <textarea
+        placeholder="Enter your text here"
+        id="character-input"
+        rows="2"
+      ></textarea>
+      <p id="character-count">Total Characters: <span></span></p>
+      <!-- </div> -->
     </div>
-
 
     <h2>!!! Form Validation !!!</h2>
     <div class="form-validation">
-
-        <form action="">
-
-            <input type="text" id="name" placeholder="Enter your name">
-            <p id="name-error">Name must be 3–50 letters and spaces only</p>
-            <input type="email" id="email" placeholder="Enter your email" autocomplete="email">
-            <p id="email-error">Please enter a valid email address</p>
-            <input type="tel" id="phone" placeholder="Enter your phone no." autocomplete="tel">
-            <p id="phone-error">Phone no. must be 10 digits</p>
-            <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
-            <p id="password-error">Password must be 8+ chars, include upper, lower, number & special char</p>
-            <select name="gender" id="select-gender">
-                <option disabled selected>Choose Your Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-            <input type="submit" id="submit-btn">
-        </form>
+      <form action="">
+        <input type="text" id="name" placeholder="Enter your name" />
+        <p id="name-error">Name must be 3–50 letters and spaces only</p>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          autocomplete="email"
+        />
+        <p id="email-error">Please enter a valid email address</p>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone no."
+          autocomplete="tel"
+        />
+        <p id="phone-error">Phone no. must be 10 digits</p>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"
+        />
+        <p id="password-error">
+          Password must be 8+ chars, include upper, lower, number & special char
+        </p>
+        <select name="gender" id="select-gender">
+          <option disabled selected>Choose Your Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input type="submit" id="submit-btn" />
+      </form>
     </div>
 
     <div class="container">
-        <div class="download-card">
-            <h2>Download File...</h2>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <p class="status">0%</p>
-            <button id="start-btn">Start Download</button>
+      <div class="download-card">
+        <h2>Download File...</h2>
+        <div class="progress-bar">
+          <div class="progress"></div>
         </div>
+        <p class="status">0%</p>
+        <button id="start-btn">Start Download</button>
+      </div>
 
-        <button class="btn">
-            Alert
-        </button>
-        <button class="btn">
-            Alert
-        </button>
-        <button class="btn">
-            Alert
-        </button>
-
+      <button class="btn">Alert</button>
+      <button class="btn">Alert</button>
+      <button class="btn">Alert</button>
     </div>
 
     <h2>Local Storage and Session Storage</h2>
@@ -131,33 +137,34 @@
     <button class="session-storage-btn" id="session-storage">Session Storage</button> -->
 
     <div class="theme-container">
-        <h2>Light Mode / Dark Mode</h2>
-        <label class="switch">
-            <input type="checkbox" id="themeToggle">
-            <span class="slider"></span>
-        </label>
+      <h2>Light Mode / Dark Mode</h2>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
     </div>
 
-
     <div class="country_container">
-        <h2>Country List</h2>
-        <!-- <select id="country_input" name="country">
+      <h2>Country List</h2>
+      <!-- <select id="country_input" name="country">
         <option disabled selected value="">Choose Your Country</option>
     </select> -->
 
-        <!-- <label for="country_input" class="country-label">Search country</label> -->
-        <input type="text" id="country_input" list="country_datalist" placeholder="Type to search (e.g. India)…"
-            autocomplete="on">
-        <datalist id="country_datalist"></datalist>
-
+      <!-- <label for="country_input" class="country-label">Search country</label> -->
+      <input
+        type="text"
+        id="country_input"
+        list="country_datalist"
+        placeholder="Type to search (e.g. India)…"
+        autocomplete="on"
+      />
+      <datalist id="country_datalist"></datalist>
     </div>
 
-
-
-    <script src="script.js" defer></script>
+    <script  src="script.js" defer></script>
     <div class="main-container">
-        <button class="tosterButton darkToster">Dark Toster</button>
-        <button class="tosterButton lightToster">Light Toster</button>
+      <button class="tosterButton darkToster">Dark Toster</button>
+      <button class="tosterButton lightToster">Light Toster</button>
     </div>
     <!-- <div class="container">
         <p>Example of a  toster message.</p>
@@ -193,174 +200,220 @@
         </form>
     </div> -->
 
-
     <div class="product-inventory">
-        <h1>Product Inventory
+      <h1>Product Inventory</h1>
+      <h1 class="add-product-btn">+</h1>
 
-        </h1>
-        <h1 class="add-product-btn">+</h1>
-
-        <div class="buttons">
-            <button onclick="fetchProducts(true)" id="showInStock">In-Stock Products</button>
-            <button onclick="fetchProducts(false)" id="showOutOfStock">Out of Stock Products</button>
-        </div>
-        <ul id="productList">
-            <!-- <li>Product 1 <button class="delete-btn">Delete</button> <button class="edit-btn">Edit</button></li> -->
-        </ul>
+      <div class="buttons">
+        <button onclick="fetchProducts(true)" id="showInStock">
+          In-Stock Products
+        </button>
+        <button onclick="fetchProducts(false)" id="showOutOfStock">
+          Out of Stock Products
+        </button>
+      </div>
+      <ul id="productList">
+        <!-- <li>Product 1 <button class="delete-btn">Delete</button> <button class="edit-btn">Edit</button></li> -->
+      </ul>
     </div>
-
 
     <div id="product-modal" class="modal-overlay">
-        <div class="modal-container">
-            <h2>Add New Product</h2>
-            <form id="product-form">
-                <div class="input-group">
-                    <label for="p-name">Product Name</label>
-                    <input type="text" id="p-name" placeholder="e.g. Wireless Mouse" required>
-                </div>
+      <div class="modal-container">
+        <h2>Add New Product</h2>
+        <form id="product-form">
+          <div class="input-group">
+            <label for="p-name">Product Name</label>
+            <input
+              type="text"
+              id="p-name"
+              placeholder="e.g. Wireless Mouse"
+              required
+            />
+          </div>
 
-                <div class="input-group">
-                    <label for="p-price">Price (₹)</label>
-                    <input type="number" id="p-price" placeholder="899" required>
-                </div>
+          <div class="input-group">
+            <label for="p-price">Price (₹)</label>
+            <input type="number" id="p-price" placeholder="899" required />
+          </div>
 
-                <div class="toggle-group">
-                    <span class="label">In Stock Status</span>
-                    <label class="switch">
-                        <input type="checkbox" id="p-stock" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
+          <div class="toggle-group">
+            <span class="label">In Stock Status</span>
+            <label class="switch">
+              <input type="checkbox" id="p-stock" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
 
-                <div class="modal-actions">
-                    <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="submit-btn">Save Product</button>
-                </div>
-                <p id="status"> </p>
-            </form>
-
-        </div>
+          <div class="modal-actions">
+            <button type="button" class="btn-cancel" onclick="closeModal()">
+              Cancel
+            </button>
+            <button type="submit" class="submit-btn">Save Product</button>
+          </div>
+          <p id="status"></p>
+        </form>
+      </div>
     </div>
     <div id="edit-product-modal" class="modal-overlay">
-        <div class="modal-container">
-            <h2>Edit Product</h2>
-            <form id="edit-product-form">
-                <div class="input-group">
-                    <label for="p-name">Product Name</label>
-                    <input type="text" id="p-name" class="edit_name" placeholder="e.g. Wireless Mouse" required>
-                </div>
-                <div class="input-group">
-                    <label for="p-price">Price (₹)</label>
-                    <input type="number" id="p-price" class="edit_price" placeholder="899" required>
-                </div>
+      <div class="modal-container">
+        <h2>Edit Product</h2>
+        <form id="edit-product-form">
+          <div class="input-group">
+            <label for="p-name">Product Name</label>
+            <input
+              type="text"
+              id="p-name"
+              class="edit_name"
+              placeholder="e.g. Wireless Mouse"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="p-price">Price (₹)</label>
+            <input
+              type="number"
+              id="p-price"
+              class="edit_price"
+              placeholder="899"
+              required
+            />
+          </div>
 
-                <div class="toggle-group">
-                    <span class="label">In Stock Status</span>
-                    <label class="switch">
-                        <input type="checkbox" id="p-stock" class="edit_stock" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
+          <div class="toggle-group">
+            <span class="label">In Stock Status</span>
+            <label class="switch">
+              <input type="checkbox" id="p-stock" class="edit_stock" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
 
-                <div class="modal-actions">
-                    <button type="button" class="btn-cancel" onclick="closeEditModal()">Cancel</button>
-                    <button type="submit" class="submit-btn">Save Product</button>
-                </div>
-            </form>
+          <div class="modal-actions">
+            <button type="button" class="btn-cancel" onclick="closeEditModal()">
+              Cancel
+            </button>
+            <button type="submit" class="submit-btn">Save Product</button>
+          </div>
+        </form>
 
-            <p id="statusEdit"> </p>
-        </div>
+        <p id="statusEdit"></p>
+      </div>
     </div>
 
-
-
-
     <section class="weather-card">
-        <h1>Weather App</h1>
+      <h1>Weather App</h1>
 
-        <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Enter city name...">
-            <button id="getWeather">Search</button>
-        </div>
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button id="getWeather">Search</button>
+      </div>
 
-        <div id="weather" class="weather-info">
-            <div class="main-stats">
-                <h2 id="location">City Name</h2>
-                <div class="temp-container">
-                    <span id="temperature">--</span>°C
-                </div>
-                <!-- <p class="description-text">🌤️ <span id="description">Condition</span></p>
+      <div id="weather" class="weather-info">
+        <div class="main-stats">
+          <h2 id="location">City Name</h2>
+          <div class="temp-container"><span id="temperature">--</span>°C</div>
+          <!-- <p class="description-text">🌤️ <span id="description">Condition</span></p>
                 <img id="icon" src="" alt="weather icon" class="weather-icon"> -->
-            </div>
-
-            <div class="details-grid">
-                <div class="detail-item">
-                    <p>🤔 Feels Like</p>
-                    <span id="feelsLike">--</span>°C
-                </div>
-                <div class="detail-item">
-                    <p>💧 Humidity</p>
-                    <span id="humidity">--</span>%
-                </div>
-                <div class="detail-item">
-                    <p>🧭 Pressure</p>
-                    <span id="pressure">--</span> hPa
-                </div>
-                <div class="detail-item">
-                    <p>💨 Wind Speed</p>
-                    <span id="windSpeed">--</span> m/s
-                </div>
-                <div class="detail-item">
-                    <p>☁️ Clouds</p>
-                    <span id="clouds">--</span>%
-                </div>
-                <div class="detail-item">
-                    <p>👁️ Visibility</p>
-                    <span id="visibility">--</span>
-                </div>
-                <div class="detail-item">
-                    <p>🌅 Sunrise</p>
-                    <span id="sunrise">--</span>
-                </div>
-                <div class="detail-item">
-                    <p>🌇 Sunset</p>
-                    <span id="sunset">--</span>
-                </div>
-            </div>
-
-            <div class="footer-info">
-                <p>🌍 <span id="country">Country</span> | 🏙️ <span id="cityName">City</span></p>
-            </div>
-            <p id="errorMessageWeather"></p>
         </div>
+
+        <div class="details-grid">
+          <div class="detail-item">
+            <p>🤔 Feels Like</p>
+            <span id="feelsLike">--</span>°C
+          </div>
+          <div class="detail-item">
+            <p>💧 Humidity</p>
+            <span id="humidity">--</span>%
+          </div>
+          <div class="detail-item">
+            <p>🧭 Pressure</p>
+            <span id="pressure">--</span> hPa
+          </div>
+          <div class="detail-item">
+            <p>💨 Wind Speed</p>
+            <span id="windSpeed">--</span> m/s
+          </div>
+          <div class="detail-item">
+            <p>☁️ Clouds</p>
+            <span id="clouds">--</span>%
+          </div>
+          <div class="detail-item">
+            <p>👁️ Visibility</p>
+            <span id="visibility">--</span>
+          </div>
+          <div class="detail-item">
+            <p>🌅 Sunrise</p>
+            <span id="sunrise">--</span>
+          </div>
+          <div class="detail-item">
+            <p>🌇 Sunset</p>
+            <span id="sunset">--</span>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <p>
+            🌍 <span id="country">Country</span> | 🏙️
+            <span id="cityName">City</span>
+          </p>
+        </div>
+        <p id="errorMessageWeather"></p>
+      </div>
     </section>
 
     <section class="Image-Slider">
-        <h1>Weather Project Gallery</h1>
-        
-        <div class="slider-wrapper">
-            <div class="slider-container">
-                <div class="slider-item">
-                    <img src="https://picsum.photos/id/237/600/600" alt="Image 1">
-                </div>
-                <div class="slider-item">
-                    <img src="https://picsum.photos/seed/picsum/600/600" alt="Image 2">
-                </div>
-                <div class="slider-item">
-                    <img src="https://picsum.photos/600/600.webp" alt="Image 3">
-                </div>
-                <div class="slider-item">
-                    <img src="https://picsum.photos/600/600?grayscale" alt="Image 4">
-                </div>
-                <div class="slider-item">
-                    <img src="https://picsum.photos/600/600/?blur" alt="Image 5">
-                </div>
-            </div>
-    
-            <button onclick="showNextImage(false)" class="nav-btn prev">❮</button>
-            <button onclick="showNextImage(true)" class="nav-btn next">❯</button>
-        </div>
-    </section>
-</body>
+      <h1>Weather Project Gallery</h1>
 
+      <div class="slider-wrapper">
+        <div class="slider-container">
+          <div class="slider-item">
+            <img src="https://picsum.photos/id/237/600/600" alt="Image 1" />
+          </div>
+          <div class="slider-item">
+            <img
+              src="https://picsum.photos/seed/picsum/600/600"
+              alt="Image 2"
+            />
+          </div>
+          <div class="slider-item">
+            <img src="https://picsum.photos/600/600.webp" alt="Image 3" />
+          </div>
+          <div class="slider-item">
+            <img src="https://picsum.photos/600/600?grayscale" alt="Image 4" />
+          </div>
+          <div class="slider-item">
+            <img src="https://picsum.photos/600/600/?blur" alt="Image 5" />
+          </div>
+        </div>
+
+        <button onclick="showNextImage(false)" class="nav-btn prev">❮</button>
+        <button onclick="showNextImage(true)" class="nav-btn next">❯</button>
+      </div>
+    </section>
+    <section class="calc">
+      <h1>Calculator</h1>
+      <div class="calculator">
+        <input type="text" class="calc_result" placeholder="1+2=3" disabled />
+        <button class="calc_button" id="one" onclick="textNumber('1')">1</button>
+        <button class="calc_button" id="two" onclick="textNumber('2')">2</button>
+        <button class="calc_button" id="three" onclick="textNumber('3')">3</button>
+        <button class="calc_button" id="plus" onclick="textOperation('+')">+</button>
+        <button class="calc_button" id="four" onclick="textNumber('4')">4</button>
+        <button class="calc_button" id="five" onclick="textNumber('5')">5</button>
+        <button class="calc_button" id="six" onclick="textNumber('6')">6</button>
+        <button class="calc_button" id="minus" onclick="textOperation('-')">-</button>
+        <button class="calc_button" id="seven" onclick="textNumber('7')">7</button>
+        <button class="calc_button" id="eight" onclick="textNumber('8')">8</button>
+        <button class="calc_button" id="nine" onclick="textNumber('9')">9</button>
+        <button class="calc_button" id="divide" onclick="textOperation('/')">/</button>
+        <button class="calc_button" id="zero" onclick="textNumber('0')">0</button>
+        <button class="calc_button" id="clear" onclick="textOperationClear('c')">c</button>
+        <button class="calc_button" id="equals" onclick="textOperationEqual()">=</button>
+        <button class="calc_button" id="multiply" onclick="textOperation('*')">*</button>
+        <button class="calc_button" id="zero" onclick="textNumber('0')">0</button>
+        <button class="calc_button" id="clear" onclick="textOperationClear('c')">c</button>
+        <!-- <button class="calc_button" id="equals" onclick="textOperationEqual()">=</button>
+        <button class="calc_button" id="multiply" onclick="textOperation('*')">*</button> -->
+      </div>
+    </section>
+  </body>
 </html>

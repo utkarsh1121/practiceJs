@@ -243,7 +243,7 @@ form {
 /* Glass Card */
 .download-card {
     background: rgba(25, 24, 24, 0.669);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border-radius: 20px;
     padding: 30px;
     width: 300px;
@@ -286,7 +286,7 @@ form {
     background: rgba(255, 255, 255, 0.3);
     color: #fff;
     cursor: pointer;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     transition: all 0.3s ease;
 }
 
@@ -616,7 +616,7 @@ input:checked+.slider:before {
 
 }
 
-.edit-btn{
+.edit-btn {
     background: rgba(255, 255, 255, 0.05);
     color: white;
     border: none;
@@ -670,7 +670,7 @@ input:checked+.slider:before {
 
 
 
-.add-product-btn{
+.add-product-btn {
     /* border: 1px solid white; */
     display: flex;
     justify-content: flex-end;
@@ -681,7 +681,7 @@ input:checked+.slider:before {
 
 
 /* Container with your signature yellow glow */
-#product-modal{
+#product-modal {
     display: none;
     /* display: flex; */
     justify-content: center;
@@ -695,11 +695,11 @@ input:checked+.slider:before {
     backdrop-filter: blur(10px);
 }
 
-#product-form{
+#product-form {
     width: 100%;
 }
 
-#edit-product-modal{
+#edit-product-modal {
     display: none;
     /* display: flex; */
     justify-content: center;
@@ -711,7 +711,9 @@ input:checked+.slider:before {
     height: 100%;
     /* color: red; */
     backdrop-filter: blur(10px);
+    z-index: 9;
 }
+
 .modal-container {
     background: rgba(25, 24, 24, 0.95);
     backdrop-filter: blur(10px);
@@ -780,17 +782,17 @@ input:checked+.slider:before {
     flex: 1;
     background: transparent;
     color: white;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
 }
 
 .btn-cancel:hover {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
-#status{
+#status {
     text-align: center;
     color: green;
     font-size: 14px;
@@ -811,7 +813,7 @@ input:checked+.slider:before {
     color: white;
     text-align: center;
     max-width: 26rem;
-    margin: 10px ;
+    margin: 10px;
 }
 
 h1 {
@@ -877,7 +879,7 @@ button:hover {
 
 .weather-icon {
     width: 100px;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
 }
 
 /* Details Grid */
@@ -938,9 +940,10 @@ button:hover {
 /* The Main Wrapper */
 .slider-wrapper {
     position: relative;
-    width: 400px; /* Adjusted for better proportion */
+    width: 400px;
+    /* Adjusted for better proportion */
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     overflow: hidden;
     /* transform: translateX(0); */
@@ -998,12 +1001,63 @@ button:hover {
 .nav-btn:hover {
     background: white;
     color: #0083b0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.prev { left: 15px; }
-.next { right: 15px; }
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
 
 .nav-btn:active {
     scale: 0.9;
+}
+
+.calculator {
+    border: 1px solid #ffffffb8;
+    box-shadow: inset 0px 0px 16px 4px white;
+    width: 22rem;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    padding: 2rem;
+    border-radius: 4rem;
+    height: 42rem;
+    align-items: center;
+
+        /* border: 1px solid rgb(243 255 0 / 87%);
+    box-shadow: inset 0px 0px 14px 3px #ffff00;
+    width: 22rem;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    padding: 2rem;
+    border-radius: 4rem;
+    height: 36rem;
+    align-items: center; */
+
+}
+
+.calc_result {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: inherit;
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-items: center;
+    height: stretch;
+    align-items: center;
+}
+
+.calc_button {
+    font-size: 1.5rem;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+
 }

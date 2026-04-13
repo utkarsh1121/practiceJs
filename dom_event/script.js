@@ -1,3 +1,5 @@
+// import { evaluate } from "https://cdn.jsdelivr.net/npm/mathjs@12.4.2/+esm";
+
 // let heading = document.createElement('h1');
 
 // // heading.textContent = "The End !!!!";
@@ -81,8 +83,6 @@
 
 // let keyb = document.querySelector('.keyword');
 
-
-
 // window.addEventListener('keydown', (e) => {
 //     // console.log(e.key);
 //     if (e.key === " ") {
@@ -119,11 +119,9 @@
 //     fileInput.textContent = "File not selected";
 // });
 
-
 // let form = document.querySelector('form');
 // let inp = document.querySelectorAll('.input');
 // let card = document.querySelectorAll('.card h4');
-
 
 // form.addEventListener('submit', (e) => {
 //     e.preventDefault();
@@ -156,7 +154,6 @@
 //     // console.log(e.target.value.length);
 //     characterCount.textContent = e.target.value.length;
 // });
-
 
 // // form validation
 
@@ -204,7 +201,6 @@
 //         document.getElementById('password-error').style.display = "none";
 //     }
 // })
-
 
 // const startBtn = document.getElementById('start-btn');
 // const progress = document.querySelector('.progress');
@@ -259,26 +255,19 @@
 // // remove kaise kare - removeItem
 // // update kaise kare - setItem
 
-
 // // localStorage.setItem("name", "John");
 
 // // sessionStorage.setItem("name", "John");
 
-
-
 // let themeToggle = document.getElementById('themeToggle');
 // let themeContainer = document.querySelector('.theme-container');
-
 
 // window.matchMedia('(prefers-color-scheme: dark)').matches ? themeContainer.classList.add('dark') : themeContainer.classList.remove('dark');
 // localStorage.getItem('theme') ? themeContainer.classList.add('dark') : themeContainer.classList.remove('dark');
 
-
-
 // // window.addEventListener('(prefers-color-scheme: dark)').addEventListener('change', () => {
 // //     themeContainer.classList.toggle('dark');
 // // });
-
 
 // themeToggle.addEventListener('change', () => {
 //     // themeContainer.classList.toggle('dark');
@@ -290,8 +279,6 @@
 //         localStorage.setItem('theme', '');
 //     }
 // });
-
-
 
 // let countryInput = [
 //     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
@@ -316,7 +303,6 @@
 //     "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
 // ]
 
-
 // // const countrylist= document.querySelector('#country_input');
 // const countrydatalist = document.querySelector('#country_datalist');
 // // count=0;
@@ -331,11 +317,6 @@
 // }
 // addCountry(countryInput);
 // // console.log(count);
-
-
-
-
-
 
 // function createToster(config) {
 //     return function (string) {
@@ -359,8 +340,8 @@
 //     }
 // }
 // // const toster = createToster({
-// //   positionX: "right", 
-// //   positionY: "top", 
+// //   positionX: "right",
+// //   positionY: "top",
 // //   theme: "dark",
 // //   duration: 3000,
 // // })
@@ -381,15 +362,12 @@
 //     lightToster("Light message");
 // });
 
-
-
 // // console.log(this)
 
 // let functionthis = function () {
 //     // console.log(this);
 // }
 // functionthis();
-
 
 // let obj = {
 //     name: "utkarsh",
@@ -415,20 +393,16 @@
 //     console.log(this.age);
 // }
 
-
 // let def = function (a, r, h) {
 //     console.log(this.age);
 //     console.log(a, r, h);
 // }
-
 
 // // abc.call(obj);
 // // bcd.call(obj2);
 // // cde.call(obj2);
 // // def.apply(obj2, [1,2,3]);
 // // def.call(obj, 45,67,89);
-
-
 
 // // const usermanager = {
 // //     user:[],
@@ -455,8 +429,6 @@
 
 // userManager.init();
 
-
-
 // function getProfile(username, callback) {
 //     setTimeout(() => {
 //         console.log(`${username} is logged in`);
@@ -464,12 +436,9 @@
 //     }, 1000);
 // }
 
-
 // getProfile("utkarsh", function (name) {
 //     console.log(`${name.username} `);
 // })
-
-
 
 // fetch("http://localhost:3000/users")
 //     .then((res) => {
@@ -481,7 +450,6 @@
 //     .catch(err => {
 //         console.log(err);
 //     })
-
 
 //     // Promise
 // let promise = new Promise((resolve, reject) => {
@@ -501,9 +469,6 @@
 //     .catch(error => {
 //         console.log(error);
 //     });
-
-
-
 
 //   let fetchData=  fetch('https://jsonplaceholder.typicode.com/posts' ,{
 //     method:'POST',
@@ -527,7 +492,6 @@
 //     console.log(err);
 // })
 
-
 // function greet(name, callback) {
 //     console.log("Hello " + name);
 //     callback();
@@ -539,11 +503,10 @@
 
 // greet("Utkarsh", sayBye);
 
-
 fetch("http://localhost:3000/users/")
-    .then(res => res.json())
-    .then(post => console.log(post))
-    .catch(err => console.error(err));
+  .then((res) => res.json())
+  .then((post) => console.log(post))
+  .catch((err) => console.error(err));
 
 // const products = [
 //     { id: 101, name: "Wireless Mouse", price: 899, inStock: true },
@@ -631,24 +594,24 @@ fetch("http://localhost:3000/users/")
 //         console.error(err);
 //     })
 
-
 fetch("http://localhost:3000/users/jWHSz1bigxY", {
-    method: 'PATCH',//PUT
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({
-        "city": "bangalore",
-        "name": "Manak Tripathi",
-        "email": "manakripathi@example.com",
-
-    })
-}).then(res => {
-    return res.json();
-}).then(data => {
-    console.log(data);
-}).catch(err => {
-    console.error(err);
+  method: "PATCH", //PUT
+  headers: { "content-type": "application/json" },
+  body: JSON.stringify({
+    city: "bangalore",
+    name: "Manak Tripathi",
+    email: "manakripathi@example.com",
+  }),
 })
-
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 // fetch("http://localhost:3000/products")
 //   .then(res => res.json())
@@ -677,9 +640,6 @@ fetch("http://localhost:3000/users/jWHSz1bigxY", {
 //         data.forEach(product => console.log(product.name)); // log each product name
 //       })
 //         .catch(err => console.error(err));
-
-
-
 
 let button = document.getElementById("showInStock");
 let list = document.getElementById("productList");
@@ -739,8 +699,6 @@ let currentEditId = null;
 //         .catch(err => console.error(err));
 // })
 
-
-
 // let StockProdct = () => {
 //     fetch("http://localhost:3000/products?inStock=true")
 //         .then(res => res.json())
@@ -781,78 +739,76 @@ let currentEditId = null;
 //         .catch(err => console.error(err));
 // }
 
-
-
 const fetchProducts = (inStock) => {
-    currentState = inStock;
-    fetch(`http://localhost:3000/products?inStock=${inStock}`)
-        .then(res => res.json())
-        .then(data => {
-            list.innerHTML = "";
-            let count = 0;
+  currentState = inStock;
+  fetch(`http://localhost:3000/products?inStock=${inStock}`)
+    .then((res) => res.json())
+    .then((data) => {
+      list.innerHTML = "";
+      let count = 0;
 
-            data.forEach(product => {
-                count++;
-                const li = document.createElement("li");
-                li.textContent = `${count}. ${product.name} - ₹${product.price}`;
-                list.appendChild(li);
-                const deleteBtn = document.createElement("button");
-                deleteBtn.textContent = "Delete";
-                deleteBtn.classList.add("delete-btn");
-                deleteBtn.addEventListener("click", () => {
-                    deleteProduct(product.id);
-                });
-                li.appendChild(deleteBtn);
-                const editBtn = document.createElement("button");
-                editBtn.textContent = "Edit";
-                editBtn.classList.add("edit-btn");
-                editBtn.addEventListener("click", () => {
-                    document.getElementById('edit-product-modal').style.display = 'flex';
-                    statusEdit.textContent = "";
-                    editName.value = product.name;
-                    editPrice.value = product.price;
-                    editStockToggle.checked = product.inStock;
-                    currentEditId = product.id;
-                    // editProduct(product.id);
-                });
-                li.appendChild(editBtn);
-            });
+      data.forEach((product) => {
+        count++;
+        const li = document.createElement("li");
+        li.textContent = `${count}. ${product.name} - ₹${product.price}`;
+        list.appendChild(li);
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Delete";
+        deleteBtn.classList.add("delete-btn");
+        deleteBtn.addEventListener("click", () => {
+          deleteProduct(product.id);
+        });
+        li.appendChild(deleteBtn);
+        const editBtn = document.createElement("button");
+        editBtn.textContent = "Edit";
+        editBtn.classList.add("edit-btn");
+        editBtn.addEventListener("click", () => {
+          document.getElementById("edit-product-modal").style.display = "flex";
+          statusEdit.textContent = "";
+          editName.value = product.name;
+          editPrice.value = product.price;
+          editStockToggle.checked = product.inStock;
+          currentEditId = product.id;
+          // editProduct(product.id);
+        });
+        li.appendChild(editBtn);
+      });
 
-            // Button styling logic
-            if (inStock) {
-                button.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
-                allButton.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
-            } else {
-                allButton.style.background = "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
-                button.style.background = "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
-            }
-        })
-        .catch(err => console.error(err));
+      // Button styling logic
+      if (inStock) {
+        button.style.background =
+          "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+        allButton.style.background =
+          "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+      } else {
+        allButton.style.background =
+          "linear-gradient(122deg, rgb(17, 192, 108), rgb(134 182 129))";
+        button.style.background =
+          "linear-gradient(184deg, rgb(255 229 3), rgb(157 164 41 / 80%))";
+      }
+    })
+    .catch((err) => console.error(err));
 };
 
 function deleteProduct(id) {
-    fetch(`http://localhost:3000/products/${id}`, {
-        method: "DELETE"
+  fetch(`http://localhost:3000/products/${id}`, {
+    method: "DELETE",
+  })
+    .then(() => {
+      console.log("deleted");
+      fetchProducts(currentState);
     })
-        .then(() => {
-            console.log("deleted")
-            fetchProducts(currentState);
-        })
-        .catch(err => console.error(err));
+    .catch((err) => console.error(err));
 }
 
-
-
 addProductBtn.addEventListener("click", () => {
-    document.getElementById('product-modal').style.display = 'flex';
-    pName.value = '';
-    pPrice.value = '';
-    pStock.checked = true;
-    status.textContent = "";
-    // fetchProducts(currentState);
+  document.getElementById("product-modal").style.display = "flex";
+  pName.value = "";
+  pPrice.value = "";
+  pStock.checked = true;
+  status.textContent = "";
+  // fetchProducts(currentState);
 });
-
-
 
 // function editProduct(id) {
 //     fetch(`http://localhost:3000/products/${id}`, {
@@ -873,37 +829,38 @@ addProductBtn.addEventListener("click", () => {
 
 // function editProduct(id) {
 editForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    try {
-        const response = await fetch(`http://localhost:3000/products/${currentEditId}`, {
-            method: "PUT",
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({
-                "name": editName.value,
-                "price": editPrice.value,
-                "inStock": editStockToggle.checked,
-                // "inStock": editForm.pStock.checked
-            })
-        });
-        console.log(response);
-        console.log(response.ok);
-        if (!response.ok) throw new Error("Failed to edit product");
-        const data = await response.json();
-        console.log("Success:", data);
-        status.style.color = "green";
-        status.textContent = "Product edited successfully";
-        // submitBtn.disabled = true;
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        closeEditModal();
-        fetchProducts(currentState);
-    }
-    catch (err) {
-        console.error(err);
-        status.style.color = "red";
-        status.textContent = "Failed to edit product";
-    }
-})
-
+  e.preventDefault();
+  try {
+    const response = await fetch(
+      `http://localhost:3000/products/${currentEditId}`,
+      {
+        method: "PUT",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          name: editName.value,
+          price: editPrice.value,
+          inStock: editStockToggle.checked,
+          // "inStock": editForm.pStock.checked
+        }),
+      },
+    );
+    console.log(response);
+    console.log(response.ok);
+    if (!response.ok) throw new Error("Failed to edit product");
+    const data = await response.json();
+    console.log("Success:", data);
+    status.style.color = "green";
+    status.textContent = "Product edited successfully";
+    // submitBtn.disabled = true;
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    closeEditModal();
+    fetchProducts(currentState);
+  } catch (err) {
+    console.error(err);
+    status.style.color = "red";
+    status.textContent = "Failed to edit product";
+  }
+});
 
 // form.addEventListener("submit", (e) => {
 //     e.preventDefault();
@@ -931,49 +888,43 @@ editForm.addEventListener("submit", async (e) => {
 // });
 
 form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    try {
-        const response = await fetch("http://localhost:3000/products", {
-            method: "POST",
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({
-                "name": pName.value,
-                "price": pPrice.value,
-                "inStock": pStock.checked
-            })
-        });
-        console.log(response);
-        console.log(response.ok);
-        if (!response.ok) throw new Error("Failed to add product");
-        const data = await response.json();
-        console.log("Success:", data);
-        status.style.color = "green";
-        status.textContent = "Product added successfully";
-        submitBtn.disabled = true;
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        closeModal();
-    }
+  e.preventDefault();
+  try {
+    const response = await fetch("http://localhost:3000/products", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        name: pName.value,
+        price: pPrice.value,
+        inStock: pStock.checked,
+      }),
+    });
+    console.log(response);
+    console.log(response.ok);
+    if (!response.ok) throw new Error("Failed to add product");
+    const data = await response.json();
+    console.log("Success:", data);
+    status.style.color = "green";
+    status.textContent = "Product added successfully";
+    submitBtn.disabled = true;
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    closeModal();
+  } catch (err) {
     // .catch(err => console.error(err));
-    catch (err) {
-        console.error(err);
-        status.style.color = "red";
-        status.textContent = "Failed to add product";
-    }
-
+    console.error(err);
+    status.style.color = "red";
+    status.textContent = "Failed to add product";
+  }
 });
 
-
-
 function closeModal() {
-    document.getElementById('product-modal').style.display = 'none';
+  document.getElementById("product-modal").style.display = "none";
 }
 
 function closeEditModal() {
-    document.getElementById('edit-product-modal').style.display = 'none';
-    editingProductId = null;
+  document.getElementById("edit-product-modal").style.display = "none";
+  editingProductId = null;
 }
-
-
 
 let searchWeather = document.querySelector("#cityInput");
 let getWeather = document.querySelector("#getWeather");
@@ -994,101 +945,98 @@ let errorMessageWeather = document.querySelector("#errorMessageWeather");
 
 const apiKey = "6fb03a4baee4752b90604c78045beb9f";
 
-
 getWeather.addEventListener("click", () => {
-    if (searchWeather.value === "") {
-        alert("Please enter a city name");
-    } else {
-        getWeatherData();
-    }
-})
+  if (searchWeather.value === "") {
+    alert("Please enter a city name");
+  } else {
+    getWeatherData();
+  }
+});
 
 async function getWeatherData() {
+  // getWeather.addEventListener("click", () => {
+  //     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchWeather.value}&limit=5&appid=${apiKey}`)
+  //     .then(res => res.json())
+  //     .then(data => {
+  //         console.log(data);
+  //     })
+  // })
+  try {
+    const response = await fetch(
+      `http://api.openweathermap.org/geo/1.0/direct?q=${searchWeather.value}&limit=&appid=${apiKey}`,
+    );
+    const data = await response.json();
+    console.log(data);
+    if (data.length === 0) {
+      throw new Error("City not found");
+      // errorMessageWeather.textContent = "City not found";
+    } else {
+      const lat = data[0].lat;
+      const lon = data[0].lon;
 
-    // getWeather.addEventListener("click", () => {
-    //     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchWeather.value}&limit=5&appid=${apiKey}`)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //     })
-    // })
-    try {
-        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchWeather.value}&limit=&appid=${apiKey}`);
-        const data = await response.json();
-        console.log(data);
-        if (data.length === 0) {
-            throw new Error("City not found");
-            // errorMessageWeather.textContent = "City not found";
-        } else {
-            const lat = data[0].lat;
-            const lon = data[0].lon;
+      console.log(lat, lon);
 
-            console.log(lat, lon);
-
-            fetchFinalWeatherData(lat, lon);
-        }
+      fetchFinalWeatherData(lat, lon);
     }
-    catch (err) {
-        console.log(err);
-        errorMessageWeather.textContent = err.message;
-    }
+  } catch (err) {
+    console.log(err);
+    errorMessageWeather.textContent = err.message;
+  }
 }
 
 async function fetchFinalWeatherData(lat, lon) {
-    try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`);
-        const data = await response.json();
-        console.log(data);
-        const tempKelvin = data.main.temp;
-        const tempCelsius = tempKelvin - 273.15;
-        temperature.textContent = Math.floor(tempCelsius);
-        const feelsLikeKelvin = data.main.feels_like;
-        const feelsLikeCelsius = feelsLikeKelvin - 273.15;
-        feelsLike.textContent = Math.floor(feelsLikeCelsius);
-        // feelsLike.textContent = data.main.feels_like;
-        humidity.textContent = data.main.humidity;
-        pressure.textContent = data.main.pressure;
-        windSpeed.textContent = data.wind.speed;
-        clouds.textContent = data.clouds.all;
-        const visibilityValue = data.visibility; // in meters
+  try {
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`,
+    );
+    const data = await response.json();
+    console.log(data);
+    const tempKelvin = data.main.temp;
+    const tempCelsius = tempKelvin - 273.15;
+    temperature.textContent = Math.floor(tempCelsius);
+    const feelsLikeKelvin = data.main.feels_like;
+    const feelsLikeCelsius = feelsLikeKelvin - 273.15;
+    feelsLike.textContent = Math.floor(feelsLikeCelsius);
+    // feelsLike.textContent = data.main.feels_like;
+    humidity.textContent = data.main.humidity;
+    pressure.textContent = data.main.pressure;
+    windSpeed.textContent = data.wind.speed;
+    clouds.textContent = data.clouds.all;
+    const visibilityValue = data.visibility; // in meters
 
-        let visibilityText = "";
+    let visibilityText = "";
 
-        if (visibilityValue <= 1000) {
-            visibilityText = "Fog / very poor visibility 🌫️";
-        } else if (visibilityValue <= 4000) {
-            visibilityText = "Hazy conditions 🌁";
-        } else if (visibilityValue <= 8000) {
-            visibilityText = "Moderate visibility";
-        } else if (visibilityValue < 10000) {
-            visibilityText = "Good visibility";
-        } else {
-            visibilityText = "Excellent / clear sky ☀️";
-        }
-
-        visibility.textContent = visibilityText;
-        sunrise.textContent = formatIST(data.sys.sunrise);
-        sunset.textContent = formatIST(data.sys.sunset);
-        country.textContent = data.sys.country;
-        cityName.textContent = data.name;
+    if (visibilityValue <= 1000) {
+      visibilityText = "Fog / very poor visibility 🌫️";
+    } else if (visibilityValue <= 4000) {
+      visibilityText = "Hazy conditions 🌁";
+    } else if (visibilityValue <= 8000) {
+      visibilityText = "Moderate visibility";
+    } else if (visibilityValue < 10000) {
+      visibilityText = "Good visibility";
+    } else {
+      visibilityText = "Excellent / clear sky ☀️";
     }
-    catch (err) {
-        console.log(err);
-    }
+
+    visibility.textContent = visibilityText;
+    sunrise.textContent = formatIST(data.sys.sunrise);
+    sunset.textContent = formatIST(data.sys.sunset);
+    country.textContent = data.sys.country;
+    cityName.textContent = data.name;
+  } catch (err) {
+    console.log(err);
+  }
 }
-
 
 function formatIST(unix) {
-    return new Date(unix * 1000).toLocaleTimeString("en-IN", {
-        timeZone: "Asia/Kolkata",
-        hour: "2-digit",
-        minute: "2-digit",
-        // second: "2-digit",
-        hour12: true
-    });
+  return new Date(unix * 1000).toLocaleTimeString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    hour: "2-digit",
+    minute: "2-digit",
+    // second: "2-digit",
+    hour12: true,
+  });
 }
-
-
 
 let previousButton = document.querySelector(".Imageslider-button");
 let nextButton = document.querySelector(".Imageslider-button");
@@ -1104,46 +1052,362 @@ let currentIndex = 0; // 0 is the first image
 // })
 
 const showNextImage = async function (isNext) {
-
-    console.log("currentIndex", currentIndex);
-    if (isNext) {
-        currentIndex++;
-        // console.log(currentIndex);
-        if (currentIndex >= imagesArray.length) {
-            currentIndex = 0;
-            console.log("next image");
-        }
-    } else {
-        currentIndex--;
-        console.log("previous image");
-        if (currentIndex < 0) {
-            currentIndex = imagesArray.length - 1;
-        }
+  console.log("currentIndex", currentIndex);
+  if (isNext) {
+    currentIndex++;
+    // console.log(currentIndex);
+    if (currentIndex >= imagesArray.length) {
+      currentIndex = 0;
+      console.log("next image");
     }
+  } else {
+    currentIndex--;
+    console.log("previous image");
+    if (currentIndex < 0) {
+      currentIndex = imagesArray.length - 1;
+    }
+  }
 
-    imagesArray.forEach((element, index) => {
-        // console.log(element);
-        // console.log(index);
-        if (index === currentIndex) {
-            indexCount = 0;
-            element.style.width = "0%";
-            element.style.display = "block";
-            currentInterval = setInterval(() => {
-                indexCount++;
-                element.style.width = indexCount + "%";
+  imagesArray.forEach((element, index) => {
+    // console.log(element);
+    // console.log(index);
+    if (index === currentIndex) {
+      indexCount = 0;
+      element.style.width = "0%";
+      element.style.display = "block";
+      currentInterval = setInterval(() => {
+        indexCount++;
+        element.style.width = indexCount + "%";
 
-                if (indexCount >= 100) {
-                    clearInterval(currentInterval);
-                    indexCount = 0;
-                }
-            }, 20);
-            
-            
+        if (indexCount >= 100) {
+          clearInterval(currentInterval);
+          indexCount = 0;
         }
-        else {
-            // 3. Turn the others OFF
-            element.style.display = "none";
-            element.style.width = "0%";
-        }
-    });
+      }, 20);
+    } else {
+      // 3. Turn the others OFF
+      element.style.display = "none";
+      element.style.width = "0%";
+    }
+  });
+};
+
+// let onebutton
+let result_calc = document.querySelector(".calc_result");
+let buttons = document.querySelectorAll(".calc_button");
+let firstNumber = 0;
+let secondNumber = 0;
+let step = 0;
+let result = 0;
+let operator;
+let numArray = [];
+let secondNumArray = [];
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     if (result_calc.value === "Error!") {
+//       result_calc.value = "";
+//     }
+//     let value = button.textContent;
+
+//     if (value === "c") {
+//       result_calc.value = "";
+//        firstNumber = 0;
+//        secondNumber = 0;
+//        step = 0;
+//        result = 0;
+//        operator;
+//        numArray = [];
+//        secondNumArray = [];
+//     }
+//     //  else {
+//     //   return textoperation(value);
+//     // }
+//     //         else if (value==="+" || value==="-" || value==="*" || value==="/") {
+//     //             if (result_calc.value === "" || result_calc.value.endsWith("+") || result_calc.value.endsWith("-") || result_calc.value.endsWith("*") || result_calc.value.endsWith("/")) {
+//     //                 return;
+//     // // Ignore operator input if it's the first character or if the last character is already an operator
+//     //             } else if (result_calc.value === "+") {
+
+//     //                 // result_calc.value += value;
+//     //             }
+//     //         }
+//     // else if (value === "=" && result_calc.value != "") {
+//     //     try {
+//     //         result_calc.value = eval(result_calc.value);
+//     //         // result_calc.value = evaluate(result_calc.value);
+//     //         console.log(result_calc.value);
+//     //     } catch (err) {
+//     //         result_calc.value = "Error!";
+//     //         console.log(err);
+//     //     }
+//     // }
+//     // else {
+//     //     result_calc.value += value;
+//     // }
+//   });
+// });
+function textOperationClear() {
+  result_calc.value = "";
+  firstNumber = 0;
+  secondNumber = 0;
+  step = 0;
+  result = 0;
+  operator = undefined;
+  numArray = [];
+  secondNumArray = [];
 }
+
+function textNumber(value) {
+  if (step === 0 || step === 1) {
+    numArray.push(value);
+    step = 1;
+    firstNumber = Number(numArray.join(""));
+    result_calc.value = firstNumber;
+  } else if (step === 2) {
+    secondNumArray.push(value);
+    secondNumber = Number(secondNumArray.join(""));
+    result_calc.value = firstNumber + operator + secondNumber;
+  }
+}
+
+function textOperation(value) {
+  if (step !== 1) return;
+  operator = value;
+  step = 2;
+  result_calc.value += value;
+}
+
+let textOperationEqual = () => {
+  if (step !== 2 || secondNumArray.length === 0) return;
+
+  if (operator === "+") result = firstNumber + secondNumber;
+  else if (operator === "-") result = firstNumber - secondNumber;
+  else if (operator === "*") result = firstNumber * secondNumber;
+  else if (operator === "/") {
+    if (secondNumber === 0) {
+      result_calc.value = "infinity";
+      return;
+    }
+    result = firstNumber / secondNumber;
+  }
+
+  result_calc.value = result;
+
+  numArray = [result.toString()];
+  secondNumArray = [];
+  firstNumber = result;
+  secondNumber = 0;
+  step = 1;
+};
+// function textoperation(value) {
+//   if (
+//     value !== "=" &&
+//     value !== "+" &&
+//     value !== "-" &&
+//     value !== "*" &&
+//     value !== "/" &&
+//     value !== "c"
+//   ) {
+//     if (step === 0 || step === 1) {
+//       numArray.push(value);
+//       step = 1;
+//       firstNumber = Number(numArray.join(""));
+//       console.log("first number", firstNumber);
+//       result_calc.value = firstNumber;
+//     } else if (step === 2) {
+//       secondNumArray.push(value);
+//       secondNumber = Number(secondNumArray.join(""));
+//       result_calc.value = secondNumber;
+//     }
+//   } else if (["+", "-", "*", "/"].includes(value)) {
+//     if (step === 1) {
+//         step = 2;
+//         operator = value;
+//     }
+//   }
+//   // If it's the equals sign
+//   else if (value === "=") {
+//     if (step === 2) {
+//         calculateResult();
+//     }
+//   }
+// }
+
+// function calculateResult() {
+//   if (operator === "+") result = firstNumber + secondNumber;
+//   else if (operator === "-") result = firstNumber - secondNumber;
+//   else if (operator === "*") result = firstNumber * secondNumber;
+//   else if (operator === "/") {
+//     if (secondNumber === 0) {
+//       result_calc.value = "Error!";
+//       return;
+//     }
+//     result = firstNumber / secondNumber;
+//   }
+
+//   result_calc.value = result;
+
+//   // Prepare for the next operation (Chaining math)
+//   firstNumber = result;
+//   secondNumber = 0;
+//   numArray = [result.toString()];
+//   secondNumArray = [];
+//   step = 1;
+// }
+
+// let result_calc = document.querySelector(".calc_result");
+// let buttons = document.querySelectorAll(".calc_button");
+
+// let firstNumber = 0;
+// let secondNumber = 0;
+// let step = 0;
+// let result = 0;
+// let operator = ""; // Initialize as empty string
+// let numArray = [];
+// let secondNumArray = [];
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     let value = button.textContent;
+
+//     if (value === "c") {
+//       // RESET EVERYTHING
+//       firstNumber = 0;
+//       secondNumber = 0;
+//       step = 0;
+//       result = 0;
+//       operator = ""; // FIX: Assign a value
+//       numArray = [];
+//       secondNumArray = [];
+//       result_calc.value = "";
+//     } else {
+//       textoperation(value);
+//     }
+//   });
+// });
+
+// function textoperation(value) {
+//   if (!isNaN(value)) {
+//     if (step === 0 || step === 1) {
+//       numArray.push(value);
+//       step = 1;
+//       firstNumber = Number(numArray.join(""));
+//       result_calc.value = firstNumber;
+//     } else if (step === 2) {
+//       secondNumArray.push(value);
+//       secondNumber = Number(secondNumArray.join(""));
+//       result_calc.value = secondNumber;
+//     }
+//   } else if (["+", "-", "*", "/"].includes(value)) {
+//     if (step === 2 && secondNumArray.length > 0) {
+//       calculateResult();
+//     }
+
+//     if (step === 1 || step === 2) {
+//       step = 2;
+//       operator = value;
+//       console.log("Operator set to:", operator);
+//     }
+//   } else if (value === "=") {
+//     if (step === 2 && secondNumArray.length > 0) {
+//       calculateResult();
+//     }
+//   }
+// }
+
+// function calculateResult() {
+//   if (operator === "+") result = firstNumber + secondNumber;
+//   else if (operator === "-") result = firstNumber - secondNumber;
+//   else if (operator === "*") result = firstNumber * secondNumber;
+//   else if (operator === "/") {
+//     if (secondNumber === 0) {
+//       result_calc.value = "Error!";
+//       numArray = [];
+//       secondNumArray = [];
+//       step = 0;
+//       return;
+//     }
+//     result = firstNumber / secondNumber;
+//   }
+
+//   result_calc.value = result;
+
+//   firstNumber = result;
+//   secondNumber = 0;
+//   numArray = [result.toString()];
+//   secondNumArray = [];
+//   step = 1;
+// }
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         if (result_calc.value === "Error!") {
+//             result_calc.value = "";
+//         }
+//         let value = button.textContent;
+
+//         if (value === "c") {
+//             result_calc.value = "";
+//         }
+//         else if (value === "=" && result_calc.value != "") {
+//             try {
+//                 result_calc.value = eval(result_calc.value);
+//                 // result_calc.value = evaluate(result_calc.value);
+//                 console.log(result_calc.value);
+//             } catch  {
+//                 result_calc.value = "Error!";
+//             }
+//         }
+//         else {
+//             result_calc.value += value;
+//         }
+//     });
+// });
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         if (result_calc.value === "Error!") {
+//             result_calc.value = "";
+//         }
+
+//         let value = button.textContent;
+
+//         if (value === "c") {
+//             result_calc.value = "";
+//         }
+//         else if (value === "=" && result_calc.value !== "") {
+//             try {
+//                 // We use a Function constructor here.
+//                 // It returns the result of the expression without 'eval'
+//                 // We sanitize the string to only allow numbers and math operators
+//                 const sanitizedExpression = result_calc.value.replace(/[^-()\d/*+.]/g, '');
+//                 result_calc.value = new Function(`return ${sanitizedExpression}`)();
+//             } catch {
+//                 result_calc.value = "Error!";
+//             }
+//         }
+//         else {
+//             // Prevent multiple operators in a row (e.g., "++" or "+*")
+//             const lastChar = result_calc.value.slice(-1);
+//             const operators = ["+", "-", "*", "/"];
+
+//             if (operators.includes(value) && operators.includes(lastChar)) {
+//                 // Optional: Replace the last operator with the new one
+//                 result_calc.value = result_calc.value.slice(0, -1) + value;
+//             } else {
+//                 result_calc.value += value;
+//             }
+//         }
+//     });
+// });
+
+// let result_calc = document.querySelector(".calc_result");
+// let buttons = document.querySelectorAll(".calc_button");
+// let firstNumber = 0;
+// let secondNumber = 0;
+// let step = 0;
+// let result = 0;
+// let operator;
+// let numArray = [];
+// let secondNumArray = [];
