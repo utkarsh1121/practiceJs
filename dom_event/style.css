@@ -1019,7 +1019,7 @@ button:hover {
 .calculator {
     border: 1px solid #ffffffb8;
     box-shadow: inset 0px 0px 16px 4px white;
-    width: 22rem;
+    width: 30rem;
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1054,10 +1054,15 @@ button:hover {
     justify-items: center;
     height: stretch;
     align-items: center;
+    font-size: 1.3rem;
 }
 
 .calc_button {
     font-size: 1.5rem;
     /* border: 1px solid rgba(255, 255, 255, 0.2); */
 
+}
+
+.calculator button{
+    width: 6rem;
 }

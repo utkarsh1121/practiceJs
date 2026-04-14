@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Event & DOM Manipulation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -161,7 +161,7 @@
       <datalist id="country_datalist"></datalist>
     </div>
 
-    <script  src="script.js" defer></script>
+    <script src="script.js" defer></script>
     <div class="main-container">
       <button class="tosterButton darkToster">Dark Toster</button>
       <button class="tosterButton lightToster">Light Toster</button>
@@ -393,26 +393,74 @@
       <h1>Calculator</h1>
       <div class="calculator">
         <input type="text" class="calc_result" placeholder="1+2=3" disabled />
-        <button class="calc_button" id="one" onclick="textNumber('1')">1</button>
-        <button class="calc_button" id="two" onclick="textNumber('2')">2</button>
-        <button class="calc_button" id="three" onclick="textNumber('3')">3</button>
-        <button class="calc_button" id="plus" onclick="textOperation('+')">+</button>
-        <button class="calc_button" id="four" onclick="textNumber('4')">4</button>
-        <button class="calc_button" id="five" onclick="textNumber('5')">5</button>
-        <button class="calc_button" id="six" onclick="textNumber('6')">6</button>
-        <button class="calc_button" id="minus" onclick="textOperation('-')">-</button>
-        <button class="calc_button" id="seven" onclick="textNumber('7')">7</button>
-        <button class="calc_button" id="eight" onclick="textNumber('8')">8</button>
-        <button class="calc_button" id="nine" onclick="textNumber('9')">9</button>
-        <button class="calc_button" id="divide" onclick="textOperation('/')">/</button>
-        <button class="calc_button" id="zero" onclick="textNumber('0')">0</button>
-        <button class="calc_button" id="clear" onclick="textOperationClear('c')">c</button>
-        <button class="calc_button" id="equals" onclick="textOperationEqual()">=</button>
-        <button class="calc_button" id="multiply" onclick="textOperation('*')">*</button>
-        <button class="calc_button" id="zero" onclick="textNumber('0')">0</button>
-        <button class="calc_button" id="clear" onclick="textOperationClear('c')">c</button>
-        <!-- <button class="calc_button" id="equals" onclick="textOperationEqual()">=</button>
-        <button class="calc_button" id="multiply" onclick="textOperation('*')">*</button> -->
+        <button class="calc_button" id="one" onclick="textNumber('1')">
+          1
+        </button>
+        <button class="calc_button" id="two" onclick="textNumber('2')">
+          2
+        </button>
+        <button class="calc_button" id="three" onclick="textNumber('3')">
+          3
+        </button>
+        <button class="calc_button" id="plus" onclick="textOperation('+')">
+          +
+        </button>
+        <button class="calc_button" id="four" onclick="textNumber('4')">
+          4
+        </button>
+        <button class="calc_button" id="five" onclick="textNumber('5')">
+          5
+        </button>
+        <button class="calc_button" id="six" onclick="textNumber('6')">
+          6
+        </button>
+        <button class="calc_button" id="minus" onclick="textOperation('-')">
+          -
+        </button>
+        <button class="calc_button" id="seven" onclick="textNumber('7')">
+          7
+        </button>
+        <button class="calc_button" id="eight" onclick="textNumber('8')">
+          8
+        </button>
+        <button class="calc_button" id="nine" onclick="textNumber('9')">
+          9
+        </button>
+        <button class="calc_button" id="divide" onclick="textOperation('/')">
+          /
+        </button>
+        <button class="calc_button" id="zero" onclick="textNumber('0')">
+          0
+        </button>
+        <button
+          class="calc_button"
+          id="clear"
+          onclick="textOperationClear('c')"
+        >
+          C
+        </button>
+        <button class="calc_button" id="equals" onclick="textOperationEqual()">
+          =
+        </button>
+        <button class="calc_button" id="multiply" onclick="textOperation('*')">
+          *
+        </button>
+        <button class="calc_button" id="exp" onclick="textOperation('^')">
+          ^
+        </button>
+        <button class="calc_button" id="clear" onclick="textNumber('.')">
+          .
+        </button>
+        <button class="calc_button" id="exp" onclick="">(</button>
+        <button class="calc_button" id="clear" onclick="">)</button>
+
+        <button class="calc_button" onclick="Trig('sin')">sin</button>
+        <button class="calc_button" onclick="Trig('cos')">cos</button>
+        <button class="calc_button" onclick="Trig('tan')">tan</button>
+        <button class="calc_button" id="equals" onclick="log('log')">
+          log
+        </button>
+        <!-- <button class="calc_button" id="multiply" onclick="textOperation('*')">*</button> -->
       </div>
     </section>
   </body>

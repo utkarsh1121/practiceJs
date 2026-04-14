@@ -1083,7 +1083,7 @@ const showNextImage = async function (isNext) {
           clearInterval(currentInterval);
           indexCount = 0;
         }
-      }, 20);
+      }, 1);
     } else {
       // 3. Turn the others OFF
       element.style.display = "none";
@@ -1093,15 +1093,15 @@ const showNextImage = async function (isNext) {
 };
 
 // let onebutton
-let result_calc = document.querySelector(".calc_result");
-let buttons = document.querySelectorAll(".calc_button");
-let firstNumber = 0;
-let secondNumber = 0;
-let step = 0;
-let result = 0;
-let operator;
-let numArray = [];
-let secondNumArray = [];
+// let result_calc = document.querySelector(".calc_result");
+// let buttons = document.querySelectorAll(".calc_button");
+// let firstNumber = 0;
+// let secondNumber = 0;
+// let step = 0;
+// let result = 0;
+// let operator;
+// let numArray = [];
+// let secondNumArray = [];
 
 // buttons.forEach((button) => {
 //   button.addEventListener("click", () => {
@@ -1147,6 +1147,22 @@ let secondNumArray = [];
 //     // }
 //   });
 // });
+
+let result_calc = document.querySelector(".calc_result");
+let buttons = document.querySelectorAll(".calc_button");
+let firstNumber = 0;
+let secondNumber = 0;
+let step = 0;
+let result = 0;
+let operator;
+let numArray = [];
+let secondNumArray = [];
+let click = false;
+let logclick = false;
+let currentTrigFunc = "";
+let op = 0;
+// let currentlog = "";
+
 function textOperationClear() {
   result_calc.value = "";
   firstNumber = 0;
@@ -1156,22 +1172,51 @@ function textOperationClear() {
   operator = undefined;
   numArray = [];
   secondNumArray = [];
+  click = false;
+  op = 0;
 }
 
 function textNumber(value) {
-  if (step === 0 || step === 1) {
-    numArray.push(value);
-    step = 1;
-    firstNumber = Number(numArray.join(""));
-    result_calc.value = firstNumber;
-  } else if (step === 2) {
-    secondNumArray.push(value);
-    secondNumber = Number(secondNumArray.join(""));
-    result_calc.value = firstNumber + operator + secondNumber;
+  if (value === ".") {
+    if (step < 2 && numArray.includes(".")) return;
+    if (step === 2 && secondNumArray.includes(".")) return;
+  }
+  if (click) {
+    // click = false;
+    if (step === 0 || step === 1) {
+      numArray.push(value);
+      // step = 1;
+      op = 1;
+      result_calc.value = currentTrigFunc + " " + numArray.join("");
+      firstNumber = Number(numArray.join(""));
+      return;
+    }
+  } else if (logclick) {
+    if (step === 0 || step === 1) {
+      numArray.push(value);
+      // step = 1;
+      op = 1;
+      result_calc.value = currentTrigFunc + " " + numArray.join("");
+      firstNumber = Number(numArray.join(""));
+      return;
+    }
+  } else {
+    if (step === 0 || step === 1) {
+      numArray.push(value);
+      step = 1;
+      result_calc.value = numArray.join("");
+      firstNumber = Number(numArray.join(""));
+    } else if (step === 2) {
+      secondNumArray.push(value);
+      secondNumber = secondNumArray.join("");
+      result_calc.value = firstNumber + operator + secondNumber;
+      secondNumber = Number(secondNumArray.join(""));
+    }
   }
 }
 
 function textOperation(value) {
+  if (op === 1) return;
   if (step !== 1) return;
   operator = value;
   step = 2;
@@ -1179,6 +1224,16 @@ function textOperation(value) {
 }
 
 let textOperationEqual = () => {
+  if (click) {
+    trigCalculation(currentTrigFunc);
+    currentTrigFunc = "";
+    click = false;
+  }
+  if (logclick) {
+    // result_calc.value = log;
+    logclick = false;
+    logCal(firstNumber);
+  }
   if (step !== 2 || secondNumArray.length === 0) return;
 
   if (operator === "+") result = firstNumber + secondNumber;
@@ -1186,13 +1241,28 @@ let textOperationEqual = () => {
   else if (operator === "*") result = firstNumber * secondNumber;
   else if (operator === "/") {
     if (secondNumber === 0) {
-      result_calc.value = "infinity";
+      result_calc.value = "Non-zero number divided by 0 results in Infinity!";
       return;
     }
     result = firstNumber / secondNumber;
+  } else if (operator === "^") {
+    result = firstNumber ** secondNumber;
+    if (result === Infinity) {
+      result_calc.value = "infinity hai bhai!";
+      // console.log("infinity hai bhai!");
+
+      firstNumber = 0;
+      secondNumber = 0;
+      step = 0;
+      result = 0;
+      operator = undefined;
+      numArray = [];
+      secondNumArray = [];
+      return;
+    }
   }
 
-  result_calc.value = result;
+  result_calc.value = result.toFixed(3);
 
   numArray = [result.toString()];
   secondNumArray = [];
@@ -1200,6 +1270,65 @@ let textOperationEqual = () => {
   secondNumber = 0;
   step = 1;
 };
+
+function log(log) {
+  // Math.log10(100)
+  currentTrigFunc = log;
+  result_calc.value = log;
+  logclick = true;
+}
+
+function logCal(firstNumber) {
+  result_calc.value = Math.log10(firstNumber);
+
+  firstNumber = 0;
+  secondNumber = 0;
+  step = 0;
+  result = 0;
+  operator = undefined;
+  numArray = [];
+  secondNumArray = [];
+  click = false;
+  op = 0;
+}
+
+function Trig(trigcos) {
+  result_calc.value = trigcos;
+  // return trigCalculation(func);
+  click = true;
+  currentTrigFunc = trigcos;
+  // textNumber();
+}
+
+function trigCalculation(func) {
+  let currentNum = firstNumber;
+  // let currentNum = step === 2 ? secondNumber : firstNumber;
+
+  try {
+    let rad = currentNum * (Math.PI / 180);
+    let trigResult;
+
+    if (func === "sin") {
+      trigResult = Math.sin(rad);
+    } else if (func === "cos") {
+      trigResult = Math.cos(rad);
+    } else if (func === "tan") {
+      trigResult = Math.tan(rad);
+    }
+
+    result_calc.value = trigResult.toFixed(4);
+
+    firstNumber = trigResult;
+    numArray = [trigResult];
+    secondNumber = 0;
+    secondNumArray = [];
+    step = 1;
+  } catch (err) {
+    result_calc.value = "Error";
+    textOperationClear();
+  }
+}
+
 // function textoperation(value) {
 //   if (
 //     value !== "=" &&
