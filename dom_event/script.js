@@ -1540,3 +1540,5 @@ function trigCalculation(func) {
 // let operator;
 // let numArray = [];
 // let secondNumArray = [];
+
+
