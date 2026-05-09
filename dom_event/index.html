@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <p>hello</p>
-    <p>need to append this</p>
+<body>
+    <script src="script.js" defer></script>
+    <p>hello </p>
+    <p>need to append this </p>
     <h1 id="title">title of the page</h1>
     <p id="text">Old Text</p>
 
@@ -299,169 +300,8 @@
       </div>
     </div>
 
-    <section class="weather-card">
-      <h1>Weather App</h1>
 
-      <div class="search-box">
-        <input type="text" id="cityInput" placeholder="Enter city name..." />
-        <button id="getWeather">Search</button>
-      </div>
 
-      <div id="weather" class="weather-info">
-        <div class="main-stats">
-          <h2 id="location">City Name</h2>
-          <div class="temp-container"><span id="temperature">--</span>°C</div>
-          <!-- <p class="description-text">🌤️ <span id="description">Condition</span></p>
-                <img id="icon" src="" alt="weather icon" class="weather-icon"> -->
-        </div>
+</body>
 
-        <div class="details-grid">
-          <div class="detail-item">
-            <p>🤔 Feels Like</p>
-            <span id="feelsLike">--</span>°C
-          </div>
-          <div class="detail-item">
-            <p>💧 Humidity</p>
-            <span id="humidity">--</span>%
-          </div>
-          <div class="detail-item">
-            <p>🧭 Pressure</p>
-            <span id="pressure">--</span> hPa
-          </div>
-          <div class="detail-item">
-            <p>💨 Wind Speed</p>
-            <span id="windSpeed">--</span> m/s
-          </div>
-          <div class="detail-item">
-            <p>☁️ Clouds</p>
-            <span id="clouds">--</span>%
-          </div>
-          <div class="detail-item">
-            <p>👁️ Visibility</p>
-            <span id="visibility">--</span>
-          </div>
-          <div class="detail-item">
-            <p>🌅 Sunrise</p>
-            <span id="sunrise">--</span>
-          </div>
-          <div class="detail-item">
-            <p>🌇 Sunset</p>
-            <span id="sunset">--</span>
-          </div>
-        </div>
-
-        <div class="footer-info">
-          <p>
-            🌍 <span id="country">Country</span> | 🏙️
-            <span id="cityName">City</span>
-          </p>
-        </div>
-        <p id="errorMessageWeather"></p>
-      </div>
-    </section>
-
-    <section class="Image-Slider">
-      <h1>Weather Project Gallery</h1>
-
-      <div class="slider-wrapper">
-        <div class="slider-container">
-          <div class="slider-item">
-            <img src="https://picsum.photos/id/237/600/600" alt="Image 1" />
-          </div>
-          <div class="slider-item">
-            <img
-              src="https://picsum.photos/seed/picsum/600/600"
-              alt="Image 2"
-            />
-          </div>
-          <div class="slider-item">
-            <img src="https://picsum.photos/600/600.webp" alt="Image 3" />
-          </div>
-          <div class="slider-item">
-            <img src="https://picsum.photos/600/600?grayscale" alt="Image 4" />
-          </div>
-          <div class="slider-item">
-            <img src="https://picsum.photos/600/600/?blur" alt="Image 5" />
-          </div>
-        </div>
-
-        <button onclick="showNextImage(false)" class="nav-btn prev">❮</button>
-        <button onclick="showNextImage(true)" class="nav-btn next">❯</button>
-      </div>
-    </section>
-    <section class="calc">
-      <h1>Calculator</h1>
-      <div class="calculator">
-        <input type="text" class="calc_result" placeholder="1+2=3" disabled />
-        <button class="calc_button" id="one" onclick="textNumber('1')">
-          1
-        </button>
-        <button class="calc_button" id="two" onclick="textNumber('2')">
-          2
-        </button>
-        <button class="calc_button" id="three" onclick="textNumber('3')">
-          3
-        </button>
-        <button class="calc_button" id="plus" onclick="textOperation('+')">
-          +
-        </button>
-        <button class="calc_button" id="four" onclick="textNumber('4')">
-          4
-        </button>
-        <button class="calc_button" id="five" onclick="textNumber('5')">
-          5
-        </button>
-        <button class="calc_button" id="six" onclick="textNumber('6')">
-          6
-        </button>
-        <button class="calc_button" id="minus" onclick="textOperation('-')">
-          -
-        </button>
-        <button class="calc_button" id="seven" onclick="textNumber('7')">
-          7
-        </button>
-        <button class="calc_button" id="eight" onclick="textNumber('8')">
-          8
-        </button>
-        <button class="calc_button" id="nine" onclick="textNumber('9')">
-          9
-        </button>
-        <button class="calc_button" id="divide" onclick="textOperation('/')">
-          /
-        </button>
-        <button class="calc_button" id="zero" onclick="textNumber('0')">
-          0
-        </button>
-        <button
-          class="calc_button"
-          id="clear"
-          onclick="textOperationClear('c')"
-        >
-          C
-        </button>
-        <button class="calc_button" id="equals" onclick="textOperationEqual()">
-          =
-        </button>
-        <button class="calc_button" id="multiply" onclick="textOperation('*')">
-          *
-        </button>
-        <button class="calc_button" id="exp" onclick="textOperation('^')">
-          ^
-        </button>
-        <button class="calc_button" id="clear" onclick="textNumber('.')">
-          .
-        </button>
-        <button class="calc_button" id="exp" onclick="">(</button>
-        <button class="calc_button" id="clear" onclick="">)</button>
-
-        <button class="calc_button" onclick="Trig('sin')">sin</button>
-        <button class="calc_button" onclick="Trig('cos')">cos</button>
-        <button class="calc_button" onclick="Trig('tan')">tan</button>
-        <button class="calc_button" id="equals" onclick="log('log')">
-          log
-        </button>
-        <!-- <button class="calc_button" id="multiply" onclick="textOperation('*')">*</button> -->
-      </div>
-    </section>
-  </body>
 </html>
