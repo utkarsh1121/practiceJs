@@ -478,9 +478,7 @@
           <h2>Grab up to <span style="color: #eb662b">35% off</span></h2>
           <h2>on your favorite</h2>
           <h2>Destination</h2>
-          <p style="margin-top: 1rem">
-            Limited time offer, don't miss the opportunity.
-          </p>
+          <p style="">Limited time offer, don't miss the opportunity.</p>
           <button style="margin-top: 1.5rem" class="search-btn">
             Book Now
           </button>
@@ -834,6 +832,13 @@
               <article class="review-card">
                 <div class="review-card-header">
                   <div class="review-avatar">
+                    <div class="quote-svg-container">
+                      <img
+                        class="review_svg"
+                        src="img/customer review comma.svg"
+                        alt=""
+                      />
+                    </div>
                     <img src="img/customer review.png" alt="" />
                   </div>
                 </div>
@@ -854,16 +859,26 @@
             <div class="swiper-slide">
               <article class="review-card">
                 <div class="review-card-header">
-                  <div class="review-avatar">EM</div>
+                  <div class="review-avatar">
+                    <div class="quote-svg-container">
+                      <img
+                        class="review_svg"
+                        src="img/customer review comma.svg"
+                        alt=""
+                      />
+                    </div>
+                    <img src="img/customer review.png" alt="" />
+                  </div>
                 </div>
-                <h3 class="review-card-title">Wonderful Experience</h3>
+
+                <h3 class="review-card-title">Excellent Service!</h3>
                 <p class="review-quote">
-                  The trip was perfectly organized, and the guides were friendly
-                  and helpful. Every detail made the journey smooth and
-                  memorable.
+                  I had an amazing experience with this company. The service was
+                  top-notch, and the staff was incredibly friendly. I highly
+                  recommend them!
                 </p>
                 <div class="review-author">
-                  <span class="review-name">Emma Moore</span>
+                  <span class="review-name">John Smith</span>
                   <span class="review-role">Traveler</span>
                 </div>
               </article>
@@ -872,15 +887,26 @@
             <div class="swiper-slide">
               <article class="review-card">
                 <div class="review-card-header">
-                  <div class="review-avatar">AK</div>
+                  <div class="review-avatar">
+                    <div class="quote-svg-container">
+                      <img
+                        class="review_svg"
+                        src="img/customer review comma.svg"
+                        alt=""
+                      />
+                    </div>
+                    <img src="img/customer review.png" alt="" />
+                  </div>
                 </div>
-                <h3 class="review-card-title">Best Tour Ever</h3>
+
+                <h3 class="review-card-title">Excellent Service!</h3>
                 <p class="review-quote">
-                  A fantastic experience from start to finish. Great value,
-                  beautiful destinations, and excellent customer support.
+                  I had an amazing experience with this company. The service was
+                  top-notch, and the staff was incredibly friendly. I highly
+                  recommend them!
                 </p>
                 <div class="review-author">
-                  <span class="review-name">Aaron King</span>
+                  <span class="review-name">John Smith</span>
                   <span class="review-role">Traveler</span>
                 </div>
               </article>
@@ -918,7 +944,17 @@
 
     <footer class="footer_main_container">
       <div class="footer_bg_main_container">
-        <img src="img/footer image.png" alt="" />
+        <!-- <img src="img/footer image.png" alt="" /> -->
+        <picture>
+          
+          <source
+          media="(max-width: 1200px)"
+          srcset="img/footer_image_1200px.png"
+          />
+          <source media="(max-width: 1500px)" srcset="img/footer_image_1500px.png">
+
+          <img src="img/footer image.png" alt="Description of the image" />
+        </picture>
         <div class="footer_content">
           <div class="footer_helpline">
             <h3>
@@ -999,6 +1035,23 @@
           el: ".mySwiper .swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+          },
+          // when window width is >= 768px (Tablet)
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+          // when window width is >= 1200px (Desktop)
+          1340: {
+            slidesPerView: 8,
+            spaceBetween: 15,
+          },
+        },
       });
 
       var topTrendingSwiper = new Swiper(".toptrending_swiper", {
@@ -1012,6 +1065,33 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 12,
+          },
+          // when window width is >= 768px (Tablet)
+          // 768: {
+          //   slidesPerView: 1,
+          //   spaceBetween: 15,
+          // },
+
+          868: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+
+          // when window width is >= 1200px (Desktop)
+          1116: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
         },
       });
 
