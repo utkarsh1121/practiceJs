@@ -17,6 +17,7 @@
         <div class="logo">
           <img src="img/logo.png" alt="logo" />
         </div>
+        <div class="overlay"></div>
 
         <nav class="nav-links">
           <ul>
@@ -27,6 +28,19 @@
             <li><a class="login-btn" href="#">Login</a></li>
           </ul>
         </nav>
+
+
+<div onclick="toggleMenu()" class="hamburger-menu">=</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.nav-links');
+    // const overlay = document.querySelector('.overlay');
+    menu.classList.toggle('active');
+    // overlay.classList.toggle('active');
+  }
+</script>
+
       </header>
       <div class="hero-content">
         <div class="heroBanner">
@@ -134,7 +148,7 @@
 
       <div class="trending-destinations">
         <h2>Trending Destinations</h2>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper swiper_trending_destinations">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="destination-card">
@@ -472,7 +486,15 @@
     <section class="favourite-destinations">
       <!-- <h2>Favourite Destinations</h2> -->
       <div class="favourite-destinations-banner">
-        <img src="img/sec4bg.png" alt="favourite-destinations-banner" />
+        <!-- <picture> -->
+          <!-- <source media="(max-width: 768px)" srcset="img/sec4bg-mobile.png">
+          <source media="(max-width: 1024px)" srcset="img/sec4bg-tablet.png"> -->
+          <!-- <img class="favourite-destinations-banner-img" src="img/sec4bg.png" alt="favourite-destinations-banner" /> -->
+        <!-- </picture> -->
+        <div class="favourite-destinations-banner-img">
+          
+          <img  src="img/sec4bg.png" alt="favourite-destinations-banner" />
+        </div>
 
         <div class="favourite-destinations-banner-content">
           <h2>Grab up to <span style="color: #eb662b">35% off</span></h2>
@@ -921,7 +943,12 @@
     <section class="emailer_main-container">
       <div class="emailer_content_bg_container">
         <div class="emailer_content_bg">
-          <img class="emailer_content_bg-img" src="img/emailer bg.png" alt="" />
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/emailer_bg_mob.png">
+            <source media="(max-width: 1024px)" srcset="img/emailer bg-tablet.png">
+            <img class="emailer_content_bg-img" src="img/emailer bg.png" alt="" />
+          </picture>
+          <!-- <img class="emailer_content_bg-img" src="img/emailer bg.png" alt="" /> -->
 
           <div class="emailer-content">
             <h2>Get 5% off your 1st<br />app booking</h2>
@@ -947,6 +974,10 @@
         <!-- <img src="img/footer image.png" alt="" /> -->
         <picture>
           
+          <source
+          media="(max-width: 768px)"
+          srcset="img/footer_bg_mobile.jpg"
+          />
           <source
           media="(max-width: 1200px)"
           srcset="img/footer_image_1200px.png"
@@ -1028,15 +1059,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
-      var trendingSwiper = new Swiper(".mySwiper", {
+      var trendingSwiper = new Swiper(".swiper_trending_destinations", {
         slidesPerView: 8,
         spaceBetween: 15,
         pagination: {
-          el: ".mySwiper .swiper-pagination",
+          el: ".swiper_trending_destinations .swiper-pagination",
           clickable: true,
         },
         breakpoints: {
           // when window width is >= 480px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+          },
+
           480: {
             slidesPerView: 3,
             spaceBetween: 12,
@@ -1068,15 +1104,15 @@
         },
         breakpoints: {
           // when window width is >= 480px
-          480: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 12,
           },
           // when window width is >= 768px (Tablet)
-          // 768: {
-          //   slidesPerView: 1,
-          //   spaceBetween: 15,
-          // },
+          708: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
 
           868: {
             slidesPerView: 2,
